@@ -8,6 +8,8 @@ import Footer from './Footer';
 import Home from '../routes/home';
 import PrivacyPolicy from '../routes/privacy-policy';
 
+import style from './style';
+
 export default class App extends Component {
 	handleRoute = event => this.currentUrl = event.url;
 
@@ -15,11 +17,13 @@ export default class App extends Component {
 		<div id="app">
 			<Header />
 
-			<Router onChange={this.handleRoute}>
-				<Home path="/" />
-				<PrivacyPolicy path="/privacy-policy" />
-				{/* <TermsOfUse path="/terms-of-use" /> */}
-			</Router>
+			<div class={style.container}>
+				<Router onChange={this.handleRoute}>
+					<Home path="/" />
+					<PrivacyPolicy path="/privacy-policy" />
+					{/* <TermsOfUse path="/terms-of-use" /> */}
+				</Router>
+			</div>
 
 			<Footer />
 		</div>

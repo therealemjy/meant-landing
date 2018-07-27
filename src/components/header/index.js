@@ -1,7 +1,7 @@
 import Button from '../Button';
 import style from './style';
 
-const hermesLogo = require('../../assets/images/logo.svg');
+const hermesLogo = require('../../assets/images/logo-blue.svg');
 
 const Header = () => (
 	<header class={style.header}>

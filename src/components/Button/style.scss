@@ -1,16 +1,23 @@
 @import '../../css/_variables';
 
 .button {
+  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
   background-color: $blue;
   border: 1px solid $blue;
-}
 
-.button:hover {
-  background-color: #2c6cd5;
-  color: #ffffff;
+  &:hover {
+    background-color: #2c6cd5;
+    color: #ffffff;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+  }
 }
 
 .button.skeleton {
@@ -19,9 +26,9 @@
   border: 1px solid $blue;
   border-radius: 3px;
   padding: 5px 15px;
-}
 
-.button.skeleton:hover {
-  background-color: $blue;
-  color: #ffffff;
+  &:hover {
+    background-color: $blue;
+    color: #ffffff;
+  }
 }
