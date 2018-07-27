@@ -29,6 +29,8 @@
     "sass-loader": "^7.0.3"
   },
   "dependencies": {
+    "basscss": "^8.0.4",
+    "classnames": "^2.2.6",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
     "preact-router": "^2.5.7"

@@ -1,0 +1,61 @@
+@import '../../css/_variables';
+
+.header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  background-color: #f2f6fa;
+}
+
+.container {
+  padding: 25px 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1281px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.logo {
+  height: 35px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  line-height: 1em;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 1.125rem;
+  position: relative;
+}
+
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  cursor: pointer;
+  color: $nav-grey;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.link:hover {
+  color: $blue;
+}
