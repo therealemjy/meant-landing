@@ -19,7 +19,12 @@ const Header = () => (
 					<a href="" class={[style.link, style.link_pricing].join(' ')}>Pricing</a>
 					<a href="" class={[style.link, style.link_sign_in].join(' ')}>Sign in</a>
 
-					<Button label="Register" skeleton onClick={() => {}} />
+					<Button
+						className={style.button}
+						label="Register"
+						onClick={() => {}}
+						skeleton
+					/>
 				</div>
 			</section>
 		</div>
