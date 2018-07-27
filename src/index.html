@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Hermes - Meeting Management Made Easy</title>
+    <meta name="author" content="Hermes team" />
+    <meta name="description" content="Hermes is a platform that reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size." />
+
+    <meta property="og:title" content="Hermes - Meeting Management Made Easy" />
+    <meta property="og:description" content="Hermes is a platform that reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size." />
+    <meta property="og:image" content="https://get-hermes.com/img/social.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:url" content="https://get-hermes.com" />
+
+    <meta name="twitter:title" content="Hermes - Meeting Management Made Easy" />
+    <meta name="twitter:description" content="Hermes is a platform that reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size." />
+    <meta name="twitter:image" content="https://get-hermes.com/img/social.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://saeedalipoor.github.io/icono/icono.min.css">
+
+    <% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
+			<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
+		<% } %>
+		<% for (var chunk of webpack.chunks) { %>
+		  <% if (chunk.names.length === 1 && chunk.names[0] === 'polyfills') continue; %>
+			<% for (var file of chunk.files) { %>
+				<% if (htmlWebpackPlugin.options.preload && file.match(/\.(js|css)$/)) { %>
+					<link rel="preload" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
+				<% } else if (file.match(/manifest\.json$/)) { %>
+					<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath + file %>">
+				<% } %>
+			<% } %>
+		<% } %>
+
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d9ba9545-79e3-4ade-ac5d-e4acd542a0d0";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111637026-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-111637026-1');
+    </script>
+  </head>
+
+  <body>
+		<%= htmlWebpackPlugin.options.ssr({
+			url: '/'
+		}) %>
+		<script defer src="<%= htmlWebpackPlugin.files.chunks['bundle'].entry %>"></script>
+		<script>window.fetch||document.write('<script src="<%= htmlWebpackPlugin.files.chunks["polyfills"].entry %>"><\/script>')</script>
+	</body>
+</html>
