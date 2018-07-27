@@ -16,8 +16,8 @@ const Header = () => (
 
 			<section class={style.nav_container}>
 				<div class={style.nav}>
-					<a href="" class={style.link}>Pricing</a>
-					<a href="" class={style.link}>Sign in</a>
+					<a href="" class={[style.link, style.link_pricing].join(' ')}>Pricing</a>
+					<a href="" class={[style.link, style.link_sign_in].join(' ')}>Sign in</a>
 
 					<Button label="Register" skeleton onClick={() => {}} />
 				</div>
