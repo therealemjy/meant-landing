@@ -8,19 +8,13 @@
   right: 0;
   height: 85px;
   background-color: $light-grey;
+  border-bottom: 1px solid #c5d4e0;
 }
 
 .container {
   padding: 25px 15px;
   display: flex;
   justify-content: space-between;
-}
-
-@media only screen and (min-width: 821px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
 }
 
 .logo {
@@ -65,9 +59,25 @@
   display: none;
 }
 
+.button {
+  padding: 5px 15px;
+  font-size: 0.875rem;
+}
+
 @media only screen and (min-width: 601px) {
+  .header {
+    border-bottom: 0;
+  }
+
   .link_pricing,
   .link_sign_in {
     display: initial;
+  }
+}
+
+@media only screen and (min-width: 821px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }

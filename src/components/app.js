@@ -8,6 +8,7 @@ import Footer from './Footer';
 import Home from '../routes/home';
 import PrivacyPolicy from '../routes/privacy-policy';
 
+import 'normalize.css';
 import style from './style';
 
 export default class App extends Component {

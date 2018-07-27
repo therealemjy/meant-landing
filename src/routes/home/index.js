@@ -1,9 +1,8 @@
-import style from './style';
+import Hero from '../../components/Hero';
 
 const Home = () => (
-	<div class={style.home}>
-		<h1>Home</h1>
-		<p>This is the Home component.</p>
+	<div>
+		<Hero />
 	</div>
 );
 

@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-@import 'basscss-type-scale';
-@import 'basscss-typography';
 
 @import './_variables';
+
 
 html, body {
 	height: 100%;
@@ -25,3 +24,5 @@ html, body {
 #app {
 	height: 100%;
 }
+
+
