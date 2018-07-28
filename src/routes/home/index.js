@@ -1,3 +1,4 @@
+import Section from '../../components/Section';
 import Hero from '../../components/Hero';
 import TitleSection from '../../components/TitleSection';
 import IllustrationSection from '../../components/IllustrationSection';
@@ -14,7 +15,6 @@ const Home = () => (
 
 		<div class={style.features_container}>
 			<TitleSection
-				className={style.features_title_section}
 				title="Loads of features"
 				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 			/>
@@ -32,7 +32,6 @@ const Home = () => (
 			/>
 
 			<IllustrationSection
-				className={style.rooms_page_section}
 				illustration={roomsPage}
 				features={[{
 					title: 'Meeting management made easy',
@@ -44,21 +43,23 @@ const Home = () => (
 				reverse
 			/>
 
-			<div class={style.timefinder_section}>
+			<Section>
 				<TitleSection
 					title="Time finder"
 					text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+					lowPaddingBottom
 				/>
 			
 				<div class={style.timefinder}>
 					TIME FINDER ANIMATION HERE
 				</div>
-			</div>
+			</Section>
 
-			<div class={style.features_section}>
+			<Section>
 				<TitleSection
 					title="More features"
 					text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+					lowPaddingBottom
 				/>
 
 				<FeaturesSection
@@ -73,7 +74,7 @@ const Home = () => (
 						text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
 					}]}
 				/>
-			</div>
+			</Section>
 		</div>
 	</div>
 );
