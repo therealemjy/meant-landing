@@ -7,7 +7,6 @@
 
 .container {
   border-top: 1px solid #c5d4e0;
-  padding: 0 15px;
 }
 
 .section {
@@ -44,14 +43,6 @@
 @media only screen and (min-width: 841px) {
   .footer {
     padding-bottom: 0;
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
   }
 
   .section {

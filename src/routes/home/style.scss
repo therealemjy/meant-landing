@@ -18,6 +18,16 @@
 
 @media only screen and (min-width: 841px) {
 	.features_container {
-		padding-top: 90px;
+		padding-top: 150px;
+	}
+
+	.meetings_page_section {
+		padding-bottom: 90px !important;
+	}
+
+	.features_title_section,
+	.timefinder_section,
+	.features_section {
+		padding-bottom: 150px;
 	}
 }
