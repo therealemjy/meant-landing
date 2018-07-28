@@ -11,7 +11,7 @@ const FeaturesSection = ({ features, className }) => (
 			{features.map(feature => (
 				<section class={style.feature}>
 					<H type="h3">{ feature.title }</H>
-					<P>{ feature.text }</P>
+					<P small>{ feature.text }</P>
 				</section>
 			))}
 		</Container>

@@ -15,7 +15,7 @@ const TitleSection = ({ title, text, className, lowPaddingBottom = false }) => (
 		)}
 	>
 		<H className={style.title}>{ title }</H>
-		<P>{ text }</P>
+		{ !!text && <P>{ text }</P> }
 	</Section>
 );
 
