@@ -1,3 +1,4 @@
+import Container from '../Container';
 import Link from '../Link';
 
 import style from './style';
@@ -6,7 +7,7 @@ const hermesLogo = require('../../assets/images/logo-grey.svg');
 
 const Footer = () => (
 	<footer class={style.footer}>
-		<div class={style.container}>
+		<Container>
 			<section class={[style.section, style.copyright].join(' ')}>
 				<img class={style.logo} src={hermesLogo} alt="Grey Hermes Logo" />
 
@@ -23,7 +24,7 @@ const Footer = () => (
 				<Link className={style.link} href="/terms-of-use">Terms of Use</Link>
 				<Link className={style.link} href="/privacy-policy">Privacy Policy</Link>
 			</section>
-		</div>
+		</Container>
 	</footer>
 );
 

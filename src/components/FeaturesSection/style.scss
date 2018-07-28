@@ -1,0 +1,21 @@
+@import '../../css/_variables';
+
+.features_section {
+  padding-bottom: 90px;
+}
+
+.feature {
+  margin-bottom: 45px;
+}
+
+.feature:last-child,
+.feature > p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 841px) {
+  .feature {
+    margin-bottom: 0;
+    padding: 0 15px;
+  }
+}

@@ -5,10 +5,6 @@
   padding: 45px 0 75px;
 }
 
-.container {
-  padding: 0 15px;
-}
-
 .block {
   margin-bottom: 45px;
 }
@@ -20,14 +16,6 @@
 }
 
 @media only screen and (min-width: 841px) {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
   .block {
     flex: 2;
     padding-right: 15px;

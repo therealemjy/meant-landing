@@ -1,3 +1,4 @@
+import Container from '../Container';
 import Link from '../Link';
 import Button from '../Button';
 
@@ -7,7 +8,7 @@ const hermesLogo = require('../../assets/images/logo-blue.svg');
 
 const Header = () => (
 	<header class={style.header}>
-		<div class={style.container}>
+		<Container className={style.container}>
 			<section class={style.brand}>
 				<img class={style.logo} src={hermesLogo} alt="Hermes logo" />
 
@@ -29,7 +30,7 @@ const Header = () => (
 					/>
 				</div>
 			</section>
-		</div>
+		</Container>
 	</header>
 );
 
