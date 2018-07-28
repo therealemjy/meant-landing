@@ -7,7 +7,7 @@ import style from './style';
 
 const TitleSection = ({ title, text, className }) => (
 	<div class={classNames(style.title_section, className)}>
-		<H className={style.title}>Loads of features</H>
+		<H className={style.title}>{ title }</H>
 		<P>{ text }</P>
 	</div>
 );

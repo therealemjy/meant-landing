@@ -1,3 +1,4 @@
+import Container from '../Container';
 import Button from '../Button';
 import H from '../H';
 import P from '../P';
@@ -9,7 +10,7 @@ const illustration = require('../../assets/images/illustration-calendar-users.sv
 
 const Hero = () => (
 	<div class={style.hero}>
-		<div class={style.container}>
+		<Container>
 			<section class={style.block}>
 				<H type="h1">Meeting management made easy</H>
 
@@ -29,7 +30,7 @@ const Hero = () => (
 					alt="Hermes is your central place for meeting and meeting rooms management"
 				/>
 			</section>
-		</div>
+		</Container>
 	</div>
 );
 

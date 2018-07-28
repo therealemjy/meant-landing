@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 
+import Container from '../Container';
 import H from '../H';
 import P from '../P';
 
@@ -7,7 +8,7 @@ import style from './style';
 
 const IllustrationSection = ({ illustration, features, className, reverse = false }) => (
 	<div class={classNames(style.illustrations_section, className)}>
-		<div class={style.container}>
+		<Container className={style.container}>
 			<section class={classNames(style.illustration_container, { [style.reverse]: !!reverse })}>
 				<img
 					class={style.illustration}
@@ -25,7 +26,7 @@ const IllustrationSection = ({ illustration, features, className, reverse = fals
 					</div>
 				))}
 			</section>
-		</div>
+		</Container>
 	</div>
 );
 
