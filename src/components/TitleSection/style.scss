@@ -1,0 +1,12 @@
+@import '../../css/_variables';
+
+.title_section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 15px 90px;
+  max-width: 650px;
+}
+
+.title_section > p:last-child {
+  margin-bottom: 0;
+}
