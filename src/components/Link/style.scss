@@ -1,0 +1,12 @@
+@import '../../css/_variables';
+
+.link {
+  display: inline-block;
+  cursor: pointer;
+  color: $dark-grey;
+  line-height: 1rem;
+}
+
+.link:hover {
+  color: $blue;
+}

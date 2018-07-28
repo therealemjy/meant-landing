@@ -1,3 +1,5 @@
+import Link from '../Link';
+
 import style from './style';
 
 const hermesLogo = require('../../assets/images/logo-grey.svg');
@@ -12,14 +14,14 @@ const Footer = () => (
 			</section>
 
 			<section class={[style.section, style.links_1].join(' ')}>
-				<a class={style.link} href="https://www.facebook.com/gethermes/" target="_blank">Facebook</a>
-				<a class={style.link} href="https://twitter.com/MeetHermes" target="_blank">Twitter</a>
-				<a class={style.link} href="mailto:hello@get-hermes.com">Contact us</a>
+				<Link className={style.link} href="https://www.facebook.com/gethermes/">Facebook</Link>
+				<Link className={style.link} href="https://twitter.com/MeetHermes">Twitter</Link>
+				<Link className={style.link} href="mailto:hello@get-hermes.com">Contact us</Link>
 			</section>
 
 			<section class={[style.section, style.links_2].join(' ')}>
-				<a class={style.link} href="/terms-of-use">Terms of Use</a>
-				<a class={style.link} href="/privacy-policy">Privacy Policy</a>
+				<Link className={style.link} href="/terms-of-use">Terms of Use</Link>
+				<Link className={style.link} href="/privacy-policy">Privacy Policy</Link>
 			</section>
 		</div>
 	</footer>
