@@ -1,12 +1,14 @@
+import classNames from 'classnames';
+
 import H from '../H';
 import P from '../P';
 
 import style from './style';
 
-const IllustrationSection = ({ illustration, features }) => (
-	<div class={style.pages_section}>
+const IllustrationSection = ({ illustration, features, className, reverse = false }) => (
+	<div class={classNames(style.pages_section, className)}>
 		<div class={style.container}>
-			<section class={style.illustration_container}>
+			<section class={classNames(style.illustration_container, { [style.reverse]: !!reverse })}>
 				<img
 					class={style.illustration}
 					src={illustration}
@@ -14,7 +16,7 @@ const IllustrationSection = ({ illustration, features }) => (
 				/>
 			</section>
 
-			<section class={style.block}>
+			<section class={classNames(style.block, { [style.reverse]: !!reverse })}>
 				{features.map(feature => (
 					<div class={style.feature}>
 						<H>{ feature.title }</H>
