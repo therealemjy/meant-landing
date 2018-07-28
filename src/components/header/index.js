@@ -1,4 +1,6 @@
+import Link from '../Link';
 import Button from '../Button';
+
 import style from './style';
 
 const hermesLogo = require('../../assets/images/logo-blue.svg');
@@ -16,8 +18,8 @@ const Header = () => (
 
 			<section class={style.nav_container}>
 				<div class={style.nav}>
-					<a href="" class={[style.link, style.link_pricing].join(' ')}>Pricing</a>
-					<a href="" class={[style.link, style.link_sign_in].join(' ')}>Sign in</a>
+					<Link href="" className={style.link_pricing}>Pricing</Link>
+					<Link href="" className={style.link_sign_in}>Sign in</Link>
 
 					<Button
 						className={style.button}

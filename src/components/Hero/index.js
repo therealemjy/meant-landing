@@ -1,4 +1,8 @@
 import Button from '../Button';
+import H from '../H';
+import P from '../P';
+import Link from '../Link';
+
 import style from './style';
 
 const illustration = require('../../assets/images/illustration-calendar-users.svg');
@@ -7,13 +11,13 @@ const Hero = () => (
 	<div class={style.hero}>
 		<div class={style.container}>
 			<section class={style.block}>
-				<h1 class={style.title}>Meeting management made easy</h1>
+				<H type="h1">Meeting management made easy</H>
 
-				<p class={style.text}>
+				<P>
 					Hermes reduces the time spent in planning meetings, manages your meeting rooms
 					and boosts your team’s productivity regardless of your company size.{' '}
-					<a href="" class={style.link}>Read more</a>
-				</p>
+					<Link href="" className={style.link}>Read more</Link>
+				</P>
 
 				<Button label="Get started" onClick={() => {}} />
 			</section>
