@@ -14,12 +14,13 @@ const Home = () => (
 
 		<div class={style.features_container}>
 			<TitleSection
+				className={style.features_title_section}
 				title="Loads of features"
 				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 			/>
 
 			<IllustrationSection
-				className={style.meetingsPageSection}
+				className={style.meetings_page_section}
 				illustration={meetingsPage}
 				features={[{
 					title: 'Meeting management made easy',
@@ -31,7 +32,7 @@ const Home = () => (
 			/>
 
 			<IllustrationSection
-				className={style.roomsPageSection}
+				className={style.rooms_page_section}
 				illustration={roomsPage}
 				features={[{
 					title: 'Meeting management made easy',
