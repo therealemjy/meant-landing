@@ -23,7 +23,7 @@ const IllustrationSection = ({ illustration, features, className, reverse = fals
 					<div class={style.feature}>
 						<H type="h3">{ feature.title }</H>
 
-						<P>{ feature.text }</P>
+						<P small>{ feature.text }</P>
 					</div>
 				))}
 			</section>

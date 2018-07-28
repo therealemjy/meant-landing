@@ -3,6 +3,7 @@ import Hero from '../../components/Hero';
 import TitleSection from '../../components/TitleSection';
 import IllustrationSection from '../../components/IllustrationSection';
 import FeaturesSection from '../../components/FeaturesSection';
+import PlansSection from '../../components/PlansSection';
 
 import style from './style';
 
@@ -55,26 +56,26 @@ const Home = () => (
 				</div>
 			</Section>
 
-			<Section>
-				<TitleSection
-					title="More features"
-					text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
-					lowPaddingBottom
-				/>
+			<TitleSection
+				title="More features"
+				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+				lowPaddingBottom
+			/>
 
-				<FeaturesSection
-					features={[{
-						title: 'Meeting management made easy',
-						text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
-					}, {
-						title: 'Meeting management made easy',
-						text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
-					}, {
-						title: 'Meeting management made easy',
-						text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
-					}]}
-				/>
-			</Section>
+			<FeaturesSection
+				features={[{
+					title: 'Meeting management made easy',
+					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+				}, {
+					title: 'Meeting management made easy',
+					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+				}, {
+					title: 'Meeting management made easy',
+					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+				}]}
+			/>
+
+			<PlansSection />
 		</div>
 	</div>
 );

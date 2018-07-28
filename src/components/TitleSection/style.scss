@@ -12,12 +12,6 @@
   padding-bottom: 60px;
 }
 
-.title_section > p:last-child {
+.title_section > *:last-child {
   margin-bottom: 0;
-}
-
-@media only screen and (min-width: 841px) {
-  .title_section.low_padding_bottom {
-    padding-bottom: 90px;
-  }
 }
