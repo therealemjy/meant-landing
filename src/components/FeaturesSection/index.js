@@ -1,5 +1,4 @@
-import classNames from 'classnames';
-
+import Section from '../Section';
 import Container from '../Container';
 import H from '../H';
 import P from '../P';
@@ -7,7 +6,7 @@ import P from '../P';
 import style from './style';
 
 const FeaturesSection = ({ features, className }) => (
-	<div class={classNames(style.features_section, className)}>
+	<Section className={className}>
 		<Container>
 			{features.map(feature => (
 				<section class={style.feature}>
@@ -16,7 +15,7 @@ const FeaturesSection = ({ features, className }) => (
 				</section>
 			))}
 		</Container>
-	</div>
+	</Section>
 );
 
 export default FeaturesSection;

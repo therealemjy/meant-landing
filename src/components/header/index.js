@@ -9,15 +9,15 @@ const hermesLogo = require('../../assets/images/logo-blue.svg');
 const Header = () => (
 	<header class={style.header}>
 		<Container className={style.container}>
-			<section class={style.brand}>
+			<div class={style.brand}>
 				<img class={style.logo} src={hermesLogo} alt="Hermes logo" />
 
 				<h3 class={style.name}>
 					Hermes
 				</h3>
-			</section>
+			</div>
 
-			<section class={style.nav_container}>
+			<div class={style.nav_container}>
 				<div class={style.nav}>
 					<Link href="" className={style.link_pricing}>Pricing</Link>
 					<Link href="" className={style.link_sign_in}>Sign in</Link>
@@ -29,7 +29,7 @@ const Header = () => (
 						skeleton
 					/>
 				</div>
-			</section>
+			</div>
 		</Container>
 	</header>
 );

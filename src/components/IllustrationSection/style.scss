@@ -1,9 +1,5 @@
 @import '../../css/_variables';
 
-.illustrations_section {
-  padding: 0 0 90px;
-}
-
 .illustration_container {
   margin-bottom: 45px;
 }
@@ -24,10 +20,6 @@
 }
 
 @media only screen and (min-width: 841px) {
-  .illustrations_section {
-    padding-bottom: 150px;
-  }
-
   .container {
     max-width: 1440px !important;
   }
