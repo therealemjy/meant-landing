@@ -1,42 +1,14 @@
 @import '../../css/_variables';
 
 .plan {
-  position: relative;
-  border-radius: 5px;
-  background: #e6eff7;
-  padding: 30px 15px 45px;
-  max-width: 365px;
-  margin: 0 auto 45px;
-}
-
-.plan_title,
-.plan_price,
-.button,
-.button_note {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.plan_title {
-  font-weight: 300;
-  text-transform: uppercase;
-  color: $blue-grey; 
-}
-
-.plan_price,
-.features_list {
-  margin-bottom: 30px;
-}
-
-.plan_price {
-  text-transform: uppercase;
+  flex: 1;
+  height: 380px;
 }
 
 .features_list {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .list_item {
@@ -47,32 +19,14 @@
   color: $light-grey;
 }
 
-.button_note {
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  right: 0;
-  margin: 0;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: $light-grey;
+.coming_soon {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 601px) {
   .plan {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 400px;
-  }
-
-  .plan_price,
-  .features_list {
-    margin-bottom: 45px;
-  }
-}
-
-@media only screen and (min-width: 841px) {
-  .plan {
-    margin: 0 30px !important;
+    height: 410px;
   }
 }
