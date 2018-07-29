@@ -48,18 +48,18 @@ const Home = () => (
 				<TitleSection
 					title="Time finder"
 					text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
-					lowPaddingBottom
+					noPaddingBottom
 				/>
 			
-				<div class={style.timefinder}>
+				<Section className={style.timefinder}>
 					TIME FINDER ANIMATION HERE
-				</div>
+				</Section>
 			</Section>
 
 			<TitleSection
 				title="More features"
 				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
-				lowPaddingBottom
+				noPaddingBottom
 			/>
 
 			<FeaturesSection
