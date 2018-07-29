@@ -1,5 +1,6 @@
 .features_container {
-	padding-top: 60px;
+	background-color: #ffffff;
+	padding-top: 45px;
 }
 
 .features_title {
@@ -18,10 +19,10 @@
 
 @media only screen and (min-width: 841px) {
 	.features_container {
-		padding-top: 150px;
+		padding-top: 75px;
 	}
 
 	.meetings_page_section {
-		padding-bottom: 90px !important;
+		padding-bottom: 0 !important;
 	}
 }

@@ -1,8 +1,12 @@
 @import '../../css/_variables';
 
+.title {
+  padding-bottom: 60px;
+}
+
 .plan {
   flex: 1;
-  height: 380px;
+  height: 410px;
 }
 
 .features_list {
@@ -23,10 +27,4 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 24px;
-}
-
-@media only screen and (min-width: 601px) {
-  .plan {
-    height: 410px;
-  }
 }

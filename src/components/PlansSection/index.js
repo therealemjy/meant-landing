@@ -8,14 +8,14 @@ import style from './style';
 
 const PlansSection = ({ className }) => (
 	<Section className={className}>
-		<TitleSection title="Simple and affordable pricing" lowPaddingBottom />
+		<TitleSection className={style.title} title="Simple and affordable pricing" />
 		
 		<Container className={style.container}>
 			<Plan
 				className={style.plan}
 				name="Human"
 				price="Free"
-				bottomNote="No Credit card needed"
+				bottomNote="No credit card needed"
 				buttonLabel="Register now"
 				onClick={() => console.log('CLIKED')}
 			>

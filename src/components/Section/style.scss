@@ -1,9 +1,13 @@
 .section {
-  padding-bottom: 90px;
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 @media only screen and (min-width: 841px) {
   .section {
-    padding-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 }

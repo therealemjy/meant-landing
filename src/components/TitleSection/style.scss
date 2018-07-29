@@ -5,13 +5,17 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.title_section.no_padding_bottom {
+  padding-bottom: 0px;
+}
+
+.content {
+  margin: 0 auto;
   max-width: 650px;
 }
 
-.title_section.low_padding_bottom {
-  padding-bottom: 60px;
-}
-
-.title_section > *:last-child {
+.content > *:last-child {
   margin-bottom: 0;
 }
