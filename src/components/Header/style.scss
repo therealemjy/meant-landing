@@ -6,18 +6,19 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 55px;
-  background-color: $light-blue-grey;
+  height: 54px;
+  background-color: #fff;
+  border-bottom: 1px solid #c5d4e0;
 }
 
 .container {
-  padding: 10px 15px;
+  padding: 12px 15px;
   display: flex;
   justify-content: space-between !important;
 }
 
 .logo {
-  height: 35px;
+  height: 30px;
 }
 
 .brand {
@@ -52,14 +53,16 @@
 @media only screen and (min-width: 601px) {
   .header {
     height: 68px;
+    transition: background-color 300ms ease, border-color 300ms ease;
+  }
+
+  .header:not(.header_scrolled) {
+    background-color: $light-blue-grey;
+    border-bottom-color: transparent;
   }
 
   .container {
-    padding: 16px 15px;
-  }
-
-  .logo {
-    height: 35px;
+    padding: 17px 15px;
   }
 
   .link_pricing,
