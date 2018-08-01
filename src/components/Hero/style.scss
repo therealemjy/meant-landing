@@ -1,8 +1,16 @@
 @import '../../css/_variables';
 
 .hero {
+  position: relative;
   background-color: $light-blue-grey;
-  padding: 45px 0 90px;
+  padding: 45px 0 60px;
+}
+
+.hero_wave {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
 }
 
 .block {
@@ -12,7 +20,7 @@
 .illustration {
   display: block;
   max-width: 100%;
-  margin: 0 auto; 
+  margin: 0 auto -60px;
 }
 
 @media only screen and (min-width: 841px) {
@@ -24,5 +32,9 @@
   .illustration_container {
     flex: 3;
     padding-left: 15px;
+  }
+
+  .illustration {
+    margin: 0 auto;
   }
 }
