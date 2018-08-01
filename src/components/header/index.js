@@ -43,13 +43,12 @@ class Header extends Component {
 
 				<div class={style.nav_container}>
 					<div class={style.nav}>
-						<Link href="" className={style.link_pricing}>Pricing</Link>
-						<Link href="" className={style.link_sign_in}>Sign in</Link>
+						<Link href="https://app.get-hermes.com/login" className={style.link_sign_in}>Sign in</Link>
 
 						<Button
 							className={style.button}
 							label="Register"
-							onClick={() => {}}
+							to="https://app.get-hermes.com/register"
 							skeleton
 						/>
 					</div>

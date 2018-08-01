@@ -27,7 +27,7 @@ const PlansSection = ({ className }) => (
 				price="Free"
 				bottomNote="No credit card needed"
 				buttonLabel="Register now"
-				onClick={() => console.log('CLIKED')}
+				to="https://app.get-hermes.com/register"
 			>
 				<ul class={style.features_list}>
 					<li class={style.list_item}>- <strong>Unlimited</strong> users</li>

@@ -1,9 +1,11 @@
 @import '../../css/_variables';
 
 .button {
+  display: inline-block;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
+  text-decoration: none;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   background-color: $blue;
