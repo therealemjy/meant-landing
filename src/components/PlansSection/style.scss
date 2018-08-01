@@ -29,21 +29,42 @@
   margin-bottom: 24px;
 }
 
-.waved_background {
+.background,
+.wave,
+.colored_background {
   position: absolute;
-  top: 70%;
   left: 0;
-  bottom: 0;
   right: 0;
-  background-color: $light-blue-grey;
+}
+
+.background {
+  top: 70%;
+  bottom: 0;
 }
 
 .wave {
+  top: 0;
   width: 100%;
+  height: 20%;
+}
+
+.colored_background {
+  top: 20%;
+  bottom: 0;
+  background-color: $light-blue-grey;
 }
 
 @media only screen and (min-width: 841px) {
-  .waved_background {
+  .background {
     top: 55%;
-  } 
+    bottom: 0;
+  }
+
+  .wave {
+    height: 25%;
+  }
+
+  .colored_background {
+    top: 25%;
+  }
 }
