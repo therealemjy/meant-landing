@@ -17,10 +17,10 @@ const Hero = () => (
 				<P>
 					Hermes reduces the time spent in planning meetings, manages your meeting rooms
 					and boosts your team’s productivity regardless of your company size.{' '}
-					<Link href="" className={style.link}>Read more</Link>
+					<Link href="https://medium.com/@maximejulian/meeting-organisation-is-messed-up-lets-fix-it-82c45f5cd4d4" className={style.link}>Read more</Link>
 				</P>
 
-				<Button label="Get started" onClick={() => {}} />
+				<Button label="Get started" to="https://app.get-hermes.com/register" />
 			</section>
 
 			<section class={style.illustration_container}>
