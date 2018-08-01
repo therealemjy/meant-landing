@@ -31,7 +31,7 @@ const Hero = () => (
 				/>
 			</section>
 			
-			<svg xmlns="http://www.w3.org/2000/svg" class={style.hero_wave} viewBox="0 0 1440 128" enable-background="new 0 0 1440 128">
+			<svg xmlns="http://www.w3.org/2000/svg" class={style.wave} viewBox="0 0 1440 128" enable-background="new 0 0 1440 128">
 				<path fill="#FFF" fill-rule="nonzero" d="M720 50.239c-145.64 54.625-399 78.306-720 0v78.306h1440V50.239c-320.24-78.306-574.36-54.626-720 0z" />
 			</svg>
 		</Container>
