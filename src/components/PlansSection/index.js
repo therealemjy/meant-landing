@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+
 import Section from '../Section';
 import Container from '../Container';
 import TitleSection from '../TitleSection';
@@ -7,7 +9,7 @@ import H from '../H';
 import style from './style';
 
 const PlansSection = ({ className }) => (
-	<Section className={className}>
+	<Section className={classNames(style.plans_section, className)}>
 		<TitleSection className={style.title} title="Simple and affordable pricing" />
 
 		<div class={style.background} >

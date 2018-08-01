@@ -27,24 +27,24 @@
 
   .illustration_container {
     flex: 3;
-    padding-right: 15px;
+    padding-right: 30px;
     margin-bottom: 0;
   }
 
   .illustration_container.reverse {
     order: 2;
     padding-right: 0;
-    padding-left: 15px;
+    padding-left: 30px;
   }
 
   .block {
     flex: 2;
-    padding-left: 15px;
+    padding-left: 30px;
   }
 
   .block.reverse {
     order: 1;
-    padding-right: 15px;
+    padding-right: 30px;
     padding-left: 0;
     margin-right: 0;
   }
