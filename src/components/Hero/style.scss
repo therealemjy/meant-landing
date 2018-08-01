@@ -3,7 +3,7 @@
 .hero {
   position: relative;
   background-color: $light-blue-grey;
-  padding: 15px 0 90px;
+  padding: 25px 0 90px;
 }
 
 .wave {
@@ -25,12 +25,12 @@
 @media only screen and (min-width: 841px) {
   .hero {
     padding-top: 45px;
-    // padding-bottom: 90px;
   }
 
   .block {
     flex: 2;
     padding-right: 15px;
+    margin-bottom: 0;
   }
 
   .illustration_container {
