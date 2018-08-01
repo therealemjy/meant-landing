@@ -9,10 +9,10 @@ const FeaturesSection = ({ features, className }) => (
 	<Section className={className}>
 		<Container>
 			{features.map(feature => (
-				<section class={style.feature}>
+				<div class={style.feature}>
 					<H type="h3">{ feature.title }</H>
 					<P small>{ feature.text }</P>
-				</section>
+				</div>
 			))}
 		</Container>
 	</Section>
