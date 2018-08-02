@@ -1,0 +1,118 @@
+@import '../../css/_variables';
+
+.time_finder {
+  padding: 0 15px;
+}
+
+.label {
+  display: block;
+  color: #b7b7b7;
+  margin-bottom: 8px;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 12px;
+  line-height: 1.25rem;
+}
+
+.left_container {
+  margin-bottom: 25px;
+}
+
+.text_unavailable {
+  display: flex;
+  color: $red;
+  align-items: center;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.unavailable_users {
+  text-align: left;
+  margin: 0 0 0 9px;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.right {
+  justify-content: space-around;
+}
+
+.loader_container {
+  display: flex;
+  align-items: center;
+}
+
+.loader {
+  font-size: 1.125rem;
+  position: relative;
+  border-top: 0.11em solid rgba(#000000, 0.1);
+  border-right: 0.11em solid rgba(#000000, 0.1);
+  border-bottom: 0.11em solid rgba(#000000, 0.1);
+  border-left: 0.11em solid #000000;
+  transform: translateZ(0);
+  animation: spin 0.5s infinite linear;
+}
+
+.loader,
+.loader:after {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader_text {
+  margin-left: 9px;
+}
+
+.time {
+  color: $blue;
+}
+
+@media only screen and (min-width: 601px) {
+  .time_finder {
+    font-size: 0.875rem;
+    display: flex;
+  }
+
+  .left_container {
+    flex: 2;
+  }
+
+  .right_container {
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  .label {
+    text-align: left;
+  }
+}
