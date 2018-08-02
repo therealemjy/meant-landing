@@ -1,7 +1,17 @@
 @import '../../css/_variables';
 
 .time_finder {
+  opacity: 0;
   padding: 0 15px;
+  transition: opacity 1000ms ease;
+}
+
+.time_finder.visible {
+  opacity: 1;
+}
+
+.time_finder > * {
+  user-select: none;
 }
 
 .label {
@@ -24,10 +34,12 @@
   margin-bottom: 25px;
 }
 
-.text_unavailable {
-  display: flex;
+.left.warning {
   color: $red;
-  align-items: center;
+}
+
+.left.success {
+  color: $green;
 }
 
 .icon {
@@ -36,7 +48,7 @@
   height: 16px;
 }
 
-.unavailable_users {
+.text {
   text-align: left;
   margin: 0 0 0 9px;
 }
