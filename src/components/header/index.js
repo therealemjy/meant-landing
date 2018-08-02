@@ -27,8 +27,12 @@ class Header extends Component {
 		}
 	};
 
-	componentWillMount = () => window.addEventListener('scroll', this.onScroll, false);
-	componentWillUnmount = () => window.removeEventListener('scroll', this.onScroll, false);
+	componentDidMount = () => window.addEventListener('scroll', this.onScroll, false);
+	componentWillUnmount = () => {
+		if (typeof window !== 'undefined') {
+			window.removeEventListener('scroll', this.onScroll, false);
+		}
+	};
 
 	render = () => (
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
