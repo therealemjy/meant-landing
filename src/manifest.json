@@ -1,6 +1,6 @@
 {
-  "name": "hermes-landing-2",
-  "short_name": "hermes-landing-2",
+  "name": "Hermes",
+  "short_name": "Hermes",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
