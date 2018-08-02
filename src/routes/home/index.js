@@ -3,12 +3,14 @@ import Hero from '../../components/Hero';
 import TitleSection from '../../components/TitleSection';
 import IllustrationSection from '../../components/IllustrationSection';
 import FeaturesSection from '../../components/FeaturesSection';
+import TimeFinder from '../../components/TimeFinder';
 import PlansSection from '../../components/PlansSection';
 
 import style from './style';
 
-const meetingsPage = require('../../assets/images/meetings-page.png');
-const roomsPage = require('../../assets/images/rooms-page.png');
+const imagesAfterfix = window.devicePixelRatio > 1 ? '-retina' : '';
+const meetingsPage = require(`../../assets/images/meetings-page${imagesAfterfix}.png`);
+const roomsPage = require(`../../assets/images/rooms-page${imagesAfterfix}.png`);
 
 const Home = () => (
 	<div>
@@ -51,8 +53,8 @@ const Home = () => (
 					noPaddingBottom
 				/>
 			
-				<Section className={style.timefinder}>
-					TIME FINDER ANIMATION HERE
+				<Section className={style.time_finder}>
+					<TimeFinder />
 				</Section>
 			</Section>
 
