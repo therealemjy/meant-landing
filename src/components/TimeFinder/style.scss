@@ -1,5 +1,67 @@
 @import '../../css/_variables';
 
+@-webkit-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes wave {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@-moz-keyframes wave {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@-o-keyframes wave {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+@keyframes wave {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
 .time_finder {
   opacity: 0;
   padding: 0 15px;
@@ -74,7 +136,7 @@
   border-bottom: 0.11em solid rgba(#000000, 0.1);
   border-left: 0.11em solid #000000;
   transform: translateZ(0);
-  animation: spin 0.5s infinite linear;
+  animation: spin 500ms infinite linear;
 }
 
 .loader,
@@ -84,29 +146,35 @@
   border-radius: 50%;
 }
 
-@-webkit-keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@-moz-keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@-o-keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .loader_text {
   margin-left: 9px;
 }
 
 .time {
+  position: relative;
   color: $blue;
+  
+  &.clickable:after,
+  &.clickable:before {
+    content: ' ';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(235, 149, 50, 0.2);
+    border: 1px solid rgba(235, 149, 50, 0.3);
+  }
+
+  &.clicked:after,
+  &.clicked:before {
+    animation: wave 500ms ease;
+  }
 }
 
 @media only screen and (min-width: 601px) {
@@ -126,5 +194,10 @@
 
   .label {
     text-align: left;
+  }
+
+  .left,
+  .right {
+    height: 46px;
   }
 }
