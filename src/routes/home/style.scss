@@ -9,13 +9,27 @@
 }
 
 .time_finder_section {
-	padding-bottom: 90px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.time_finder_section_title {
+	margin-bottom: 30px;
+}
+
+.time_finder_container {
+	display: block;
+	max-width: 650px;
+	text-align: center;
+	margin: 0 auto;
+
+	& > {
+		margin-bottom: 0;
+	}
 }
 
 .time_finder {
-	margin: 0 auto;
-	text-align: center;
-	max-width: 650px;
+	margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 841px) {

@@ -1,5 +1,8 @@
 import Section from '../../components/Section';
 import Hero from '../../components/Hero';
+import Container from '../../components/Container';
+import H from '../../components/H';
+import P from '../../components/P';
 import TitleSection from '../../components/TitleSection';
 import IllustrationSection from '../../components/IllustrationSection';
 import FeaturesSection from '../../components/FeaturesSection';
@@ -46,16 +49,12 @@ const Home = () => (
 				reverse
 			/>
 
-			<Section>
-				<TitleSection
-					title="Time finder"
-					text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
-					noPaddingBottom
-				/>
-			
-				<Section className={style.time_finder}>
-					<TimeFinder />
-				</Section>
+			<Section className={style.time_finder_section}>
+				<Container className={style.time_finder_container}>
+					<H className={style.time_finder_section_title}>Time finder</H>
+					<TimeFinder className={style.time_finder} />
+					<P>Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size</P>
+				</Container>
 			</Section>
 
 			<TitleSection
