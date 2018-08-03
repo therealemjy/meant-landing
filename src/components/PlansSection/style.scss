@@ -10,7 +10,7 @@
 
 .plan {
   flex: 1;
-  height: 410px;
+  height: 360px;
 }
 
 .features_list {
@@ -62,6 +62,10 @@
   .background {
     top: 55%;
     bottom: 0;
+  }
+
+  .plan {
+    height: 425px;
   }
 
   .wave {

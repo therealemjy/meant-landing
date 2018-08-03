@@ -7,7 +7,7 @@
   border-radius: 5px;
   background: #e6eff7;
   padding: 30px 15px 45px;
-  max-width: 365px;
+  max-width: 325px;
   margin: 0 auto 45px;
 }
 
@@ -24,7 +24,8 @@
 .plan_title {
   font-weight: 300;
   text-transform: uppercase;
-  color: $blue-grey; 
+  color: $blue-grey;
+  margin-bottom: 5px;
 }
 
 .plan_price {
@@ -50,16 +51,13 @@
   color: $light-grey;
 }
 
-@media only screen and (min-width: 601px) {
-  .plan {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: 400px;
-  }
-}
-
 @media only screen and (min-width: 841px) {
   .plan {
     margin: 0 30px !important;
+    max-width: 364px;
+  }
+
+  .plan_title {
+    margin-bottom: 15px;
   }
 }
