@@ -15,9 +15,9 @@ class TimeFinder extends Component {
 			hasBeenAnimated: false,
 		});
 
-		setTimeout(() => this.setState({ step: 2 }), 2500);
-		setTimeout(() => this.setState({ step: 3 }), 3100);
-		setTimeout(() => this.setState({ step: 4 }), 4600);
+		setTimeout(() => this.setState({ step: 2 }), 3000);
+		setTimeout(() => this.setState({ step: 3 }), 3600);
+		setTimeout(() => this.setState({ step: 4 }), 5100);
 	};
 
 	onScroll = () => {
@@ -55,7 +55,7 @@ class TimeFinder extends Component {
 						)}
 
 						{step < 3 && <div class={style.text_unavailable}>
-							<p class={style.text}><span class={style.underlined}>Marc</span> and <span class={style.underlined}>Eva</span> are not available for this date and time.</p>
+							<p class={style.text}><span class={style.underlined}>Marc</span> and <span class={style.underlined}>Eva</span> are not available for this time.</p>
 						</div>}
 
 						{step === 3 && <div class={style.loader_container}>
@@ -64,7 +64,7 @@ class TimeFinder extends Component {
 						</div>}
 
 						{step === 4 && <div class={style.text_unavailable}>
-							<p class={style.text}>Everyone is available for this date and time.</p>
+							<p class={style.text}>Everyone is available for this time.</p>
 						</div>}
 					</div>
 				</div>
