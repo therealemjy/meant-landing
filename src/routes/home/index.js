@@ -20,45 +20,47 @@ const Home = () => (
 		<Hero />
 
 		<div class={style.features_container}>
-			<TitleSection
-				title="Loads of features"
+			{/* <TitleSection
+				title="A software you deserve"
 				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
-			/>
+			/> */}
 
 			<IllustrationSection
 				className={style.meetings_page_section}
 				illustration={meetingsPage}
 				features={[{
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Schedule',
+					text: 'Organise meetings with members of your team and/or external guests.',
 				}, {
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Follow up',
+					text: "Track guests' attendance and receive updates on meetings changes in real time.",
 				}]}
 			/>
 
 			<IllustrationSection
 				illustration={roomsPage}
 				features={[{
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Scale',
+					text: 'Manage rooms, the day your company needs them.',
 				}, {
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Optimise',
+					text: 'Eliminate double-bookings',
 				}]}
 				reverse
 			/>
 
 			<Section className={style.time_finder_section}>
-				<Container className={style.time_finder_container}>
-					<H className={style.time_finder_section_title}>Time finder</H>
-					<TimeFinder className={style.time_finder} />
-					<P>Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size</P>
-				</Container>
+				<Section>
+					<Container className={style.time_finder_container}>
+						<H className={style.time_finder_section_title}>Plan meetings smarter and faster</H>
+						<TimeFinder className={style.time_finder} />
+						<P>Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size</P>
+					</Container>
+				</Section>
 			</Section>
 
 			<TitleSection
-				title="More features"
+				title="All you need in one platform"
 				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 				noPaddingBottom
 			/>
