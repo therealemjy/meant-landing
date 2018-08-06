@@ -12,12 +12,10 @@ const Hero = () => (
 	<div class={style.hero}>
 		<Container>
 			<section class={style.block}>
-				<H type="h1">Meeting management made easy</H>
+				<H type="h1">Meeting planning, without the hassle</H>
 
 				<P>
-					Hermes reduces the time spent in planning meetings, manages your meeting rooms
-					and boosts your team’s productivity regardless of your company size.{' '}
-					<Link href="https://medium.com/@maximejulian/meeting-organisation-is-messed-up-lets-fix-it-82c45f5cd4d4" className={style.link}>Read more</Link>
+					Organise, manage and optimise meetings, sync all your calendars together and stay connected with the people you work with.
 				</P>
 
 				<Button label="Get started" to="https://app.get-hermes.com/register" />

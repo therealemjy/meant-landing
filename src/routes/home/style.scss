@@ -23,7 +23,7 @@
 	text-align: center;
 	margin: 0 auto;
 
-	& > {
+	& > *:last-child {
 		margin-bottom: 0;
 	}
 }
