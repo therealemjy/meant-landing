@@ -41,10 +41,10 @@ const Home = () => (
 				illustration={roomsPage}
 				features={[{
 					title: 'Scale',
-					text: 'Manage rooms, the day your company needs them.',
+					text: 'Manage rooms when your company has some.',
 				}, {
-					title: 'Optimise',
-					text: 'Eliminate double-bookings',
+					title: 'Browse',
+					text: 'Find and reserve rooms based on your needs and availabilities, in real-time.',
 				}]}
 				reverse
 			/>
@@ -52,33 +52,36 @@ const Home = () => (
 			<Section className={style.time_finder_section}>
 				<Section>
 					<Container className={style.time_finder_container}>
-						<H className={style.time_finder_section_title}>Plan meetings smarter and faster</H>
+						<H className={style.time_finder_section_title}>Plan smarter and faster</H>
 						<TimeFinder className={style.time_finder} />
-						<P>Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size</P>
+						<P>Replay TODO</P>
+						<P>Our time finder quickly finds a time that works for all your guests and yourself.</P>
 					</Container>
 				</Section>
 			</Section>
 
 			<TitleSection
 				title="All you need in one platform"
-				text="Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+				text="No more juggling between several apps. Hermes is the only service you will ever need to schedule meetings within and outside your team."
 				noPaddingBottom
 			/>
 
 			<FeaturesSection
 				features={[{
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Useful integrations',
+					text: 'Connect with the tools you already use and that make your life easier.',
 				}, {
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Flowless experience',
+					text: 'Invite external guests using just their e-mail address. They will get notified and see the meeting on their calendar.',
 				}, {
-					title: 'Meeting management made easy',
-					text: 'Hermes reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size.',
+					title: 'Clever notifications',
+					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
 				}]}
 			/>
 
-			<PlansSection />
+			<PlansSection
+				className={style.plans_section}
+			/>
 		</div>
 	</div>
 );
