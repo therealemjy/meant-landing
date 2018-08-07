@@ -21,6 +21,8 @@ class TimeFinder extends Component {
 	};
 
 	onScroll = () => {
+		if (typeof window === 'undefined') { return; }
+
 		const threshold = 250;
 		const top = this.timefinder.getBoundingClientRect().top;
 
