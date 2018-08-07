@@ -15,6 +15,8 @@ class Header extends Component {
 	};
 
 	onScroll = () => {
+		if (typeof window === 'undefined') { return; }
+
 		if (window.scrollY > 80 && !this.state.isScrolled) {
 			this.setState({
 				isScrolled: true,

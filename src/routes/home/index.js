@@ -11,7 +11,7 @@ import PlansSection from '../../components/PlansSection';
 
 import style from './style';
 
-const imagesAfterfix = window.devicePixelRatio > 1 ? '-retina' : '';
+const imagesAfterfix = (typeof window !== 'undefined') && window.devicePixelRatio > 1 ? '-retina' : '';
 const meetingsPage = require(`../../assets/images/meetings-page${imagesAfterfix}.png`);
 const roomsPage = require(`../../assets/images/rooms-page${imagesAfterfix}.png`);
 
