@@ -79,7 +79,9 @@ const Home = () => (
 				}]}
 			/>
 
-			<PlansSection />
+			<PlansSection
+				className={style.plans_section}
+			/>
 		</div>
 	</div>
 );
