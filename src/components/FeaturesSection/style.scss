@@ -4,7 +4,12 @@
   padding-bottom: 90px;
 }
 
+.container {
+  align-items: flex-start;
+}
+
 .feature {
+  flex: 1;
   margin-bottom: 45px;
 }
 

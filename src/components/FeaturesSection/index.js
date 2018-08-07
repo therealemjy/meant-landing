@@ -7,7 +7,7 @@ import style from './style';
 
 const FeaturesSection = ({ features, className }) => (
 	<Section className={className}>
-		<Container>
+		<Container className={style.container}>
 			{features.map(feature => (
 				<div class={style.feature}>
 					<H type="h3">{ feature.title }</H>
