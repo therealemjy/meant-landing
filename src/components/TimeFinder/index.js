@@ -6,19 +6,35 @@ import style from './style';
 class TimeFinder extends Component {
 	state = {
 		step: 0,
-		hasBeenAnimated: true,
+		isAnimating: false,
+		isBlocked: false,
 	};
 
 	startAnimation = () => {
+		if (this.state.isAnimating) {
+			return;
+		}
+
 		this.setState({
 			step: 1,
-			hasBeenAnimated: false,
+			isAnimating: true,
+			isBlocked: true,
 		});
 
 		setTimeout(() => this.setState({ step: 2 }), 3000);
 		setTimeout(() => this.setState({ step: 3 }), 3600);
 		setTimeout(() => this.setState({ step: 4 }), 5100);
+		setTimeout(() => this.setState({
+			step: 5,
+			isAnimating: false,
+		}), 6100);
 	};
+
+	onReplay = () => {
+		this.state({ isBlocked: false });
+
+		this.startAnimation();
+	}
 
 	onScroll = () => {
 		if (typeof window === 'undefined') { return; }
@@ -26,7 +42,7 @@ class TimeFinder extends Component {
 		const threshold = 250;
 		const top = this.timefinder.getBoundingClientRect().top;
 
-		if (this.state.hasBeenAnimated && top <= window.innerHeight - threshold) {
+		if (!this.state.isBlocked && !this.state.isAnimating && top <= window.innerHeight - threshold) {
 			this.startAnimation();
 		}
 	};
@@ -39,52 +55,63 @@ class TimeFinder extends Component {
 		const times = step < 3 ? ['10:30', '13:30', '14:30'] : ['13:30', '14:30', '16:30'];
 
 		return (
-			<div
-				class={classNames(style.time_finder, { [style.visible]: step > 0 }, this.props.className)}
-				ref={timefinder => this.timefinder = timefinder}
-			>
-				<div class={style.left_container}>
-					<label class={style.label}>Time finder</label>
+			<div class={style.time_finder_container}>
+				<div
+					class={classNames(style.time_finder, { [style.visible]: step > 0 }, this.props.className)}
+					ref={timefinder => this.timefinder = timefinder}
+				>
+					<div class={style.left_container}>
+						<label class={style.label}>Time finder</label>
 
-					<div class={classNames(style.left, {
-						[style.warning]: step < 3,
-						[style.success]: step === 4,
-					})}>
-						{step !== 3 && (
-							<svg class={style.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24px" height="24px" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-								<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-							</svg>
-						)}
+						<div class={classNames(style.left, {
+							[style.warning]: step < 3,
+							[style.success]: step > 3,
+						})}>
+							{step !== 3 && (
+								<svg class={style.icon} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" width="24px" height="24px" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+								</svg>
+							)}
 
-						{step < 3 && <div class={style.text_unavailable}>
-							<p class={style.text}><span class={style.underlined}>Marc</span> and <span class={style.underlined}>Eva</span> are not available for this time.</p>
-						</div>}
+							{step < 3 && <div class={style.text_unavailable}>
+								<p class={style.text}><span class={style.underlined}>Marc</span> and <span class={style.underlined}>Eva</span> are not available for this time.</p>
+							</div>}
 
-						{step === 3 && <div class={style.loader_container}>
-							<div class={style.loader} />
-							<span class={style.loader_text}>Loading...</span>
-						</div>}
+							{step === 3 && <div class={style.loader_container}>
+								<div class={style.loader} />
+								<span class={style.loader_text}>Loading...</span>
+							</div>}
 
-						{step === 4 && <div class={style.text_unavailable}>
-							<p class={style.text}>Everyone is available for this time.</p>
-						</div>}
+							{step > 3 && <div class={style.text_unavailable}>
+								<p class={style.text}>Everyone is available for this time.</p>
+							</div>}
+						</div>
+					</div>
+
+					<div class={style.right_container}>
+						<label class={style.label}>Alternative times</label>
+
+						<div class={style.right}>
+							{ step === 3 && <div class={style.loader} /> }
+							{ step !== 3 && times.map((time, index) => (
+								<span class={
+									classNames(style.time, {
+										[style.clickable]: index === 0,
+										[style.clicked]: step === 2,
+									})}
+								>{ time }</span>)
+							)}
+						</div>
 					</div>
 				</div>
 
-				<div class={style.right_container}>
-					<label class={style.label}>Alternative times</label>
+				<div class={classNames(style.replay, { [style.visible]: step > 4 })} onClick={this.startAnimation}>
+					<span class={style.replay_text}>Replay</span>
 
-					<div class={style.right}>
-						{ step === 3 && <div class={style.loader} /> }
-						{ step !== 3 && times.map((time, index) => (
-							<span class={
-								classNames(style.time, {
-									[style.clickable]: index === 0,
-									[style.clicked]: step === 2,
-								})}
-							>{ time }</span>)
-						)}
-					</div>
+					<svg class={classNames(style.icon, style.replay_icon)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+						<polyline points="23 4 23 10 17 10" />
+						<path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+					</svg>
 				</div>
 			</div>
 		);

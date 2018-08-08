@@ -54,7 +54,6 @@ const Home = () => (
 					<Container className={style.time_finder_container}>
 						<H className={style.time_finder_section_title}>Plan smarter and faster</H>
 						<TimeFinder className={style.time_finder} />
-						<P>Replay TODO</P>
 						<P>Our time finder quickly finds a time that works for all your guests and yourself.</P>
 					</Container>
 				</Section>
