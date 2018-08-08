@@ -91,8 +91,9 @@
   line-height: 1.25rem;
 }
 
-.left_container {
-  margin-bottom: 25px;
+.left_container,
+.right_container {
+  margin-bottom: 15px;
 }
 
 .left.warning {
@@ -176,10 +177,40 @@
   }
 }
 
+.replay {
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0;
+  color: $blue;
+  transition: opacity 600ms ease;
+  padding: 0 5px;
+}
+
+.replay.visible {
+  opacity: 1;
+}
+
+.replay_text,
+.replay_icon {
+  vertical-align: middle;
+}
+
+.replay_icon {
+  margin-left: 6px;
+  width: 14px;
+  height: 14px;
+}
+
 @media only screen and (min-width: 601px) {
   .time_finder {
     font-size: 0.875rem;
     display: flex;
+    margin-bottom: 15px;
+  }
+
+  .left_container,
+  .right_container {
+    margin-bottom: 0;
   }
 
   .left_container {
@@ -198,5 +229,9 @@
   .left,
   .right {
     height: 46px;
+  }
+
+  .replay_text {
+    font-size: 0.875rem;
   }
 }
