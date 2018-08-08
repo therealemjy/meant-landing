@@ -41,7 +41,7 @@ const Home = () => (
 				illustration={roomsPage}
 				features={[{
 					title: 'Scale',
-					text: 'Expend your workspace as your team grows. Hermes manages meeting rooms out-of-the-box.',
+					text: 'Expand your workspace as your team grows. Hermes manages meeting rooms out-of-the-box.',
 				}, {
 					title: 'Browse',
 					text: 'Find and reserve rooms based on your needs and availabilities, in real-time.',
