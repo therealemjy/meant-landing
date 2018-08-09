@@ -8,6 +8,12 @@
   align-items: flex-start;
 }
 
+.icon {
+  margin-bottom: 20px;
+  height: 80px;
+  width: 80px;
+}
+
 .feature {
   flex: 1;
   margin-bottom: 45px;
@@ -30,5 +36,10 @@
 
   .feature:last-child {
     padding-right: 0;
+  }
+
+  .icon {
+    height: 122px;
+    width: 122px;
   }
 }

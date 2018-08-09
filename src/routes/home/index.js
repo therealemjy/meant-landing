@@ -15,6 +15,12 @@ const imagesAfterfix = (typeof window !== 'undefined') && window.devicePixelRati
 const meetingsPage = require(`../../assets/images/meetings-page${imagesAfterfix}.png`);
 const roomsPage = require(`../../assets/images/rooms-page${imagesAfterfix}.png`);
 
+const featuresIcons = {
+	integrations: require('../../assets/images/integrations.svg'),
+	flowlessExperience: require('../../assets/images/flowless-experience.svg'),
+	notifications: require('../../assets/images/notifications.svg')
+};
+
 const Home = () => (
 	<div>
 		<Hero />
@@ -69,12 +75,15 @@ const Home = () => (
 				features={[{
 					title: 'Useful integrations',
 					text: 'Connect with the tools you already use and that make your life easier.',
+					icon: featuresIcons.integrations
 				}, {
 					title: 'Flowless experience',
 					text: 'Invite external guests using just their e-mail address. They will get notified and see the meeting on their calendar.',
+					icon: featuresIcons.flowlessExperience
 				}, {
 					title: 'Clever notifications',
 					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
+					icon: featuresIcons.notifications
 				}]}
 			/>
 
