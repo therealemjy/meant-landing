@@ -3,13 +3,20 @@
 # Only use spaces to indent your .yml configuration.
 # -----
 # You can specify a custom docker image from Docker Hub as your build environment.
-image: node:6.9.4
+image: node:9.6.1
 
 pipelines:
-  default:
-    - step:
-        caches:
-          - node
-        script: # Modify the commands below to build your repository.
-          - npm install
-          - npm test
+  branches:
+    master:
+      - step:
+          caches:
+            - node
+          script: # Modify the commands below to build your repository.
+            - apt-get update && apt-get install -y python-dev
+            - curl -O https://bootstrap.pypa.io/get-pip.py
+            - python get-pip.py
+            - pip install awscli
+            - npm install
+            - npm run build
+            - aws s3 sync --delete ./dist s3://get-hermes.com --region "eu-west-2" --acl public-read --cache-control public,max-age=604800
+            - aws cloudfront create-invalidation --distribution-id E34V2VIOXU6I89 --paths '/*'
