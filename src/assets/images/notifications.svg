@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="122px" height="122px" viewBox="0 0 122 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+<svg width="122px" height="122px" viewBox="0 0 122 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard</title>
+    <title>ilustration 2</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="ilustration-2">
-            <g transform="translate(2.000000, 20.000000)">
-                <g id="bell" transform="translate(0.000000, 4.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                    <path d="M22,16.5 L0,16.5 C1.82253967,16.5 3.3,15.0225397 3.3,13.2 L3.3,7.7 C3.30000006,3.44740747 6.74740747,1.1473894e-07 11,1.1473894e-07 C15.2525925,1.14738941e-07 18.6999999,3.44740747 18.7,7.7 L18.7,13.2 C18.7,15.0225397 20.1774603,16.5 22,16.5 Z M12.903,20.9 C12.5094225,21.5784848 11.7843755,21.9961019 11,21.9961019 C10.2156245,21.9961019 9.49057754,21.5784848 9.097,20.9 L12.903,20.9 Z" id="Shape"></path>
-                </g>
-                <circle id="Oval" stroke="#FFFFFF" stroke-width="3" fill="#D0021B" cx="19" cy="5" r="5"></circle>
-                <rect id="Rectangle" fill="#D0021B" opacity="0.1" x="34" y="10" width="62" height="7" rx="3.5"></rect>
-                <rect id="Rectangle" fill="#D0021B" opacity="0.1" x="34" y="27" width="62" height="7" rx="3.5"></rect>
-                <rect id="Rectangle" fill="#D0021B" opacity="0.1" x="34" y="44" width="62" height="7" rx="3.5"></rect>
-                <rect id="Rectangle" fill="#D0021B" opacity="0.1" x="34" y="61" width="62" height="7" rx="3.5"></rect>
-                <rect id="Rectangle" fill="#D0021B" opacity="0.1" x="34" y="78" width="62" height="7" rx="3.5"></rect>
-            </g>
+    <g id="ilustration-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(49.000000, 21.000000)" fill="#FAE5E8" id="Rectangle">
+            <rect x="0" y="0" width="71" height="7" rx="3.5"></rect>
+            <rect x="0" y="22" width="71" height="7" rx="3.5"></rect>
+            <rect x="0" y="44" width="71" height="7" rx="3.5"></rect>
+            <rect x="0" y="66" width="71" height="7" rx="3.5"></rect>
+            <rect x="0" y="88" width="71" height="7" rx="3.5"></rect>
+        </g>
+        <circle id="Oval" fill="#FAE5E8" cx="22.5" cy="21.5" r="19.5"></circle>
+        <g id="bell" transform="translate(14.000000, 9.000000)">
+            <path d="M18,17.5 L0,17.5 C1.49116882,17.5 2.7,16.2911688 2.7,14.8 L2.7,10.3 C2.70000005,6.82060611 5.52060611,4.00000009 9,4.00000009 C12.4793939,4.00000009 15.2999999,6.82060611 15.3,10.3 L15.3,14.8 C15.3,16.2911688 16.5088312,17.5 18,17.5 Z M10.557,21.1 C10.234982,21.6551239 9.64176175,21.9968107 9,21.9968107 C8.35823825,21.9968107 7.76501799,21.6551239 7.443,21.1 L10.557,21.1 Z" id="Shape" stroke="#D0021B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval" stroke="#FAE5E8" stroke-width="3" fill="#D0021B" cx="14" cy="5" r="5"></circle>
         </g>
     </g>
 </svg>
