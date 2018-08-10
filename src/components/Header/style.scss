@@ -24,6 +24,7 @@
 .brand {
   display: flex;
   align-items: center;
+  text-decoration: none !important;
 }
 
 .name {
@@ -32,6 +33,7 @@
   padding: 0 10px;
   font-size: 1.125rem;
   position: relative;
+  color: $dark-grey !important;
 }
 
 .nav_container {

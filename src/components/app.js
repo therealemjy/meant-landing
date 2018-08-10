@@ -7,6 +7,7 @@ import Footer from './Footer';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import PrivacyPolicy from '../routes/privacy-policy';
+import TermsOfUse from '../routes/terms-of-use';
 
 import 'normalize.css';
 import style from './style';
@@ -22,7 +23,7 @@ export default class App extends Component {
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<PrivacyPolicy path="/privacy-policy" />
-					{/* <TermsOfUse path="/terms-of-use" /> */}
+					<TermsOfUse path="/terms-of-use" />
 				</Router>
 			</div>
 
