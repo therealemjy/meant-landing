@@ -39,13 +39,13 @@ class Header extends Component {
 	render = () => (
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
 			<Container className={style.container}>
-				<div class={style.brand}>
+				<a class={style.brand} href="/">
 					<img class={style.logo} src={hermesLogo} alt="Hermes logo" />
 
 					<h3 class={style.name}>
 						Hermes
 					</h3>
-				</div>
+				</a>
 
 				<div class={style.nav_container}>
 					<div class={style.nav}>

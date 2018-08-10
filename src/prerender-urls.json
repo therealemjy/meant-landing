@@ -1,4 +1,10 @@
 [{
   "url": "/",
-  "title": "Hermes - Meeting Management Made Easy"
+  "title": "Hermes - Meeting planning, without the hassle"
+}, {
+  "url": "/privacy-policy",
+  "title": "Hermes - Privacy Policy"
+}, {
+  "url": "/terms-of-use",
+  "title": "Hermes - Terms of Use"
 }]

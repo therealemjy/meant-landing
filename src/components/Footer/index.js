@@ -7,7 +7,7 @@ const hermesLogo = require('../../assets/images/logo-grey.svg');
 
 const Footer = () => (
 	<footer class={style.footer}>
-		<Container>
+		<Container className={style.container}>
 			<div class={[style.section, style.copyright].join(' ')}>
 				<img class={style.logo} src={hermesLogo} alt="Grey Hermes Logo" />
 
