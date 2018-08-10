@@ -74,7 +74,7 @@ class TimeFinder extends Component {
 							)}
 
 							{step < 3 && <div class={style.text_unavailable}>
-								<p class={style.text}><span class={style.underlined}>Marc</span> and <span class={style.underlined}>Eva</span> are not available for this time.</p>
+								<p class={style.text}><span class={style.underlined}>Marc</span> and <span class={style.underlined}>Eva</span> are not available at 10:00.</p>
 							</div>}
 
 							{step === 3 && <div class={style.loader_container}>
@@ -83,7 +83,7 @@ class TimeFinder extends Component {
 							</div>}
 
 							{step > 3 && <div class={style.text_unavailable}>
-								<p class={style.text}>Everyone is available for this time.</p>
+								<p class={style.text}>Everyone is available at 10:30.</p>
 							</div>}
 						</div>
 					</div>
