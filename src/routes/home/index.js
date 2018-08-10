@@ -39,7 +39,7 @@ const Home = () => (
 					text: 'Organise meetings with members of your team and/or external guests.',
 				}, {
 					title: 'Follow up',
-					text: "Track guests' attendance and receive updates on meetings changes in real time.",
+					text: "Track guests' attendance and receive updates on meeting changes in real time.",
 				}]}
 			/>
 
