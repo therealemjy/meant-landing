@@ -20,10 +20,12 @@
 }
 
 .list_item {
-  line-height: 1.5rem;
+  color: #555758;
+  line-height: 1.65rem;
 }
 
 .list_item_note {
+  font-size: 0.875rem;
   color: $light-grey;
 }
 
@@ -58,6 +60,10 @@
   background-color: $light-blue-grey;
 }
 
+.illustration {
+  display: none;
+}
+
 @media only screen and (min-width: 841px) {
   .background {
     top: 55%;
@@ -65,7 +71,13 @@
   }
 
   .plan {
-    height: 425px;
+    max-width: 364px;
+    height: 445px;
+    margin: 0 15px !important;
+  }
+
+  .list_item_note {
+    font-size: 0.775rem;
   }
 
   .wave {
@@ -74,5 +86,20 @@
 
   .colored_background {
     top: 25%;
+  }
+
+  .illustration {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+  }
+
+  .illustration_left {
+    left: -120px;
+  }
+
+  .illustration_right {
+    right: -120px;
   }
 }

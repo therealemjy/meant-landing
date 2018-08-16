@@ -8,6 +8,9 @@ import H from '../H';
 
 import style from './style';
 
+const illustrationHumans = require('../../assets/images/illustration-humans.svg');
+const illustrationGods = require('../../assets/images/illustration-gods.svg');
+
 const PlansSection = ({ className }) => (
 	<Section className={classNames(style.plans_section, className)}>
 		<TitleSection className={style.title} title="Simple and affordable pricing" />
@@ -29,6 +32,12 @@ const PlansSection = ({ className }) => (
 				buttonLabel="Register now"
 				to="https://app.get-hermes.com/register"
 			>
+				<img
+					class={[style.illustration, style.illustration_left].join(' ')}
+					src={illustrationHumans}
+					alt=""
+				/>
+
 				<ul class={style.features_list}>
 					<li class={style.list_item}>- <strong>Unlimited</strong> users</li>
 					<li class={style.list_item}>- <strong>Unlimited</strong> meetings</li>
@@ -40,6 +49,12 @@ const PlansSection = ({ className }) => (
 
 			<Plan className={style.plan} name="God">
 				<H type="h3" className={style.coming_soon}>Coming soon</H>
+				
+				<img
+					class={[style.illustration, style.illustration_right].join(' ')}
+					src={illustrationGods}
+					alt=""
+				/>
 			</Plan>
 		</Container>
 	</Section>
