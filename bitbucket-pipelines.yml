@@ -18,5 +18,5 @@ pipelines:
             - pip install awscli
             - npm install
             - npm run build
-            - aws s3 sync --delete ./build s3://get-hermes.com --region "eu-west-2" --acl public-read --cache-control public,max-age=604800
-            - aws cloudfront create-invalidation --distribution-id E34V2VIOXU6I89 --paths '/*'
+            - aws s3 sync --delete ./build s3://komete.io --region "eu-west-2" --acl public-read --cache-control public,max-age=604800
+            - aws cloudfront create-invalidation --distribution-id E3T1K7DNP75JL1 --paths '/*'
