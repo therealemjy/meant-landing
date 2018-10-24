@@ -18,11 +18,11 @@ const PrivacyPolicy = () => (
 				The following outlines our privacy policy.
 			</P>
 
-			<P>User data is safely stored in Europe. The Hermes core infrastructure is hosted in London, United Kingdom.</P>
+			<P>User data is safely stored in Europe. The Komete core infrastructure is hosted in London, United Kingdom.</P>
 
 			<H type="h3">Respect of Privacy</H>
 			
-			<P>Get-hermes.com takes user privacy seriously.</P>
+			<P>Komete.com takes user privacy seriously.</P>
 
 			<Ul>
 				<Li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</Li>

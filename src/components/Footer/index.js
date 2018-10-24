@@ -9,15 +9,15 @@ const Footer = () => (
 	<footer class={style.footer}>
 		<Container className={style.container}>
 			<div class={[style.section, style.copyright].join(' ')}>
-				<img class={style.logo} src={hermesLogo} alt="Grey Hermes Logo" />
+				<img class={style.logo} src={hermesLogo} alt="Grey Komete Logo" />
 
-				<span class={style.copyright_text}>Copyright &copy; 2018 Hermes</span>
+				<span class={style.copyright_text}>Copyright &copy; 2018 Komete</span>
 			</div>
 
 			<div class={[style.section, style.links_1].join(' ')}>
 				<Link className={style.link} href="https://www.facebook.com/gethermes/">Facebook</Link>
 				<Link className={style.link} href="https://twitter.com/MeetHermes">Twitter</Link>
-				<Link className={style.link} href="mailto:hello@get-hermes.com">Contact us</Link>
+				<Link className={style.link} href="mailto:hello@komete.io">Contact us</Link>
 			</div>
 
 			<div class={[style.section, style.links_2].join(' ')}>

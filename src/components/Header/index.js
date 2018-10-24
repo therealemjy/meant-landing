@@ -40,21 +40,21 @@ class Header extends Component {
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
 			<Container className={style.container}>
 				<a class={style.brand} href="/">
-					<img class={style.logo} src={hermesLogo} alt="Hermes logo" />
+					<img class={style.logo} src={hermesLogo} alt="Komete logo" />
 
 					<h3 class={style.name}>
-						Hermes
+						Komete
 					</h3>
 				</a>
 
 				<div class={style.nav_container}>
 					<div class={style.nav}>
-						<Link href="https://app.get-hermes.com/login" className={style.link_sign_in}>Sign in</Link>
+						<Link href="https://app.komete.io/login" className={style.link_sign_in}>Sign in</Link>
 
 						<Button
 							className={style.button}
 							label="Register"
-							to="https://app.get-hermes.com/register"
+							to="https://app.komete.io/register"
 							skeleton
 						/>
 					</div>

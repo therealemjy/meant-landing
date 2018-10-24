@@ -1,4 +1,4 @@
-# hermes-landing-2
+# komete-landing-2
 
 ## CLI Commands
 
