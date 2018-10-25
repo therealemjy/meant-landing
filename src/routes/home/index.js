@@ -28,7 +28,7 @@ const Home = () => (
 		<div class={style.features_container}>
 			{/* <TitleSection
 				title="A software you deserve"
-				text="Komete reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+				text="Timowl reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 			/> */}
 
 			<IllustrationSection
@@ -47,7 +47,7 @@ const Home = () => (
 				illustration={roomsPage}
 				features={[{
 					title: 'Scale',
-					text: 'Expand your workspace as your team grows. Komete manages meeting rooms out-of-the-box.',
+					text: 'Expand your workspace as your team grows. Timowl manages meeting rooms out-of-the-box.',
 				}, {
 					title: 'Browse',
 					text: 'Find and reserve rooms based on your needs and availabilities, in real-time.',
@@ -67,7 +67,7 @@ const Home = () => (
 
 			<TitleSection
 				title="All you need in one platform"
-				text="No more juggling between several apps. Komete is the only service you will ever need to schedule meetings within and outside your team."
+				text="No more juggling between several apps. Timowl is the only service you will ever need to schedule meetings within and outside your team."
 				noPaddingBottom
 			/>
 

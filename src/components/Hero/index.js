@@ -17,14 +17,14 @@ const Hero = () => (
 					Organise, manage and optimise meetings, sync all your calendars together and stay connected with the people you work with.
 				</P>
 
-				<Button label="Get started" to="https://app.komete.io/register" />
+				<Button label="Get started" to="https://app.timowl.com/register" />
 			</section>
 
 			<section class={style.illustration_container}>
 				<img
 					class={style.illustration}
 					src={illustration}
-					alt="Komete is your central place for meeting and meeting rooms management"
+					alt="Timowl is your central place for meeting and meeting rooms management"
 				/>
 			</section>
 

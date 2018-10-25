@@ -30,7 +30,7 @@ const PlansSection = ({ className }) => (
 				price="Free"
 				bottomNote="No credit card needed"
 				buttonLabel="Register now"
-				to="https://app.komete.io/register"
+				to="https://app.timowl.com/register"
 			>
 				<img
 					class={[style.illustration, style.illustration_left].join(' ')}
