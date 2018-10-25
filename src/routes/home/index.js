@@ -77,7 +77,7 @@ const Home = () => (
 					text: 'Connect with the tools you already use and that make your life easier.',
 					icon: featuresIcons.integrations
 				}, {
-					title: 'Flowless experience',
+					title: 'Flawless experience',
 					text: 'Invite external guests using just their e-mail address. They will get notified and see the meeting on their calendar.',
 					icon: featuresIcons.flowlessExperience
 				}, {
