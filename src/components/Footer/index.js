@@ -3,13 +3,13 @@ import Link from '../Link';
 
 import style from './style';
 
-const timowlLogo = require('../../assets/images/logo-grey.svg');
+// const timowlLogo = require('../../assets/images/logo-grey.svg');
 
 const Footer = () => (
 	<footer class={style.footer}>
 		<Container className={style.container}>
 			<div class={[style.section, style.copyright].join(' ')}>
-				<img class={style.logo} src={timowlLogo} alt="Grey Timowl Logo" />
+				{/* <img class={style.logo} src={timowlLogo} alt="Grey Timowl Logo" /> */}
 
 				<span class={style.copyright_text}>Copyright &copy; 2018 Timowl</span>
 			</div>

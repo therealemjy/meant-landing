@@ -7,11 +7,11 @@ import Button from '../Button';
 
 import style from './style';
 
-const timowlLogo = require('../../assets/images/logo-blue.svg');
+// const timowlLogo = require('../../assets/images/logo-blue.svg');
 
 class Header extends Component {
 	state = {
-		isScrolled: false,
+		isScrolled: false
 	};
 
 	onScroll = () => {
@@ -19,12 +19,12 @@ class Header extends Component {
 
 		if (window.scrollY > 80 && !this.state.isScrolled) {
 			this.setState({
-				isScrolled: true,
+				isScrolled: true
 			});
 		}
 		else if (window.scrollY < 81 && this.state.isScrolled) {
 			this.setState({
-				isScrolled: false,
+				isScrolled: false
 			});
 		}
 	};
@@ -40,7 +40,7 @@ class Header extends Component {
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
 			<Container className={style.container}>
 				<a class={style.brand} href="/">
-					<img class={style.logo} src={timowlLogo} alt="Timowl logo" />
+					{/* <img class={style.logo} src={timowlLogo} alt="Timowl logo" /> */}
 
 					<h3 class={style.name}>
 						Timowl
