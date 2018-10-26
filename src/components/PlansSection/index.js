@@ -13,7 +13,7 @@ const illustrationGods = require('../../assets/images/illustration-gods.svg');
 
 const PlansSection = ({ className }) => (
 	<Section className={classNames(style.plans_section, className)}>
-		<TitleSection className={style.title} title="Simple and affordable pricing" />
+		<TitleSection className={style.title} title="One pricing, for teams of all sizes" />
 
 		<div class={style.background} >
 			<svg class={style.wave} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 112" enable-background="new 0 0 1440 112" preserveAspectRatio="none">
@@ -26,11 +26,9 @@ const PlansSection = ({ className }) => (
 		<Container className={style.container}>
 			<Plan
 				className={style.plan}
-				name="Human"
-				price="Free"
-				bottomNote="No credit card needed"
-				buttonLabel="Register now"
-				to="https://app.timowl.com/register"
+				name="Professionals"
+				price="£9"
+				note="per user, per month"
 			>
 				<img
 					class={[style.illustration, style.illustration_left].join(' ')}
@@ -39,17 +37,13 @@ const PlansSection = ({ className }) => (
 				/>
 
 				<ul class={style.features_list}>
-					<li class={style.list_item}>- <strong>Unlimited</strong> users</li>
 					<li class={style.list_item}>- <strong>Unlimited</strong> meetings</li>
-					<li class={style.list_item}>- Up to 5 meeting rooms <span class={style.list_item_note}>(unlimited during beta)</span></li>
-					<li class={style.list_item}>- Time finder</li>
-					<li class={style.list_item}>- Integration with Google Calendar</li>
+					<li class={style.list_item}>- <strong>Unlimited</strong> meeting rooms</li>
+					<li class={style.list_item}>- <strong>Unlimited</strong> integrations</li>
+					<li class={style.list_item}>- <strong>Custom support</strong></li>
+					<li class={style.list_item}>- <strong>Personnalised team setup</strong></li>
 				</ul>
-			</Plan>
 
-			<Plan className={style.plan} name="God">
-				<H type="h3" className={style.coming_soon}>Coming soon</H>
-				
 				<img
 					class={[style.illustration, style.illustration_right].join(' ')}
 					src={illustrationGods}

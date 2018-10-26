@@ -6,10 +6,12 @@ import Button from '../Button';
 
 import style from './style';
 
-const Plan = ({ className, children, name, price, buttonLabel, bottomNote, to }) => (
+const Plan = ({ className, children, name, price, note, buttonLabel, bottomNote, to }) => (
 	<div class={classNames(style.plan, className)}>
 		<H className={style.plan_title} type="h3">{ name }</H>
 		{ !!price && <H className={style.plan_price}>{ price }</H> }
+
+		{ !!note && <H type="h4" className={style.plan_note}>{ note }</H> }
 
 		<div class={style.content}>{ children }</div>
 
