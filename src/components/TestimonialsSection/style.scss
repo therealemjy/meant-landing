@@ -1,0 +1,35 @@
+@import '../../css/_variables';
+
+.container {
+  align-items: flex-start;
+}
+
+.testimonial {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+  padding: 15px;
+  // border: 1px solid #c5d4e0;
+  border-radius: 5px;
+  background-color: #f2f6fa;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.testimonial_text {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.testimonial_author {
+  line-height: 1.75rem;
+}
+
+@media only screen and (min-width: 841px) {
+  .testimonial {
+    max-width: 450px;
+    margin: 0 15px;
+    padding: 30px;
+  }   
+}
