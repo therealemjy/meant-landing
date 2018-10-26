@@ -8,6 +8,7 @@ import IllustrationSection from '../../components/IllustrationSection';
 import FeaturesSection from '../../components/FeaturesSection';
 import TimeFinder from '../../components/TimeFinder';
 import PlansSection from '../../components/PlansSection';
+import PartnersSection from '../../components/PartnersSection';
 
 import style from './style';
 
@@ -24,6 +25,8 @@ const featuresIcons = {
 const Home = () => (
 	<div>
 		<Hero />
+
+		<PartnersSection />
 
 		<div class={style.features_container}>
 			{/* <TitleSection
