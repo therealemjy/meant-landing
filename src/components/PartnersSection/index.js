@@ -19,9 +19,9 @@ const PartnersSection = ({ className }) => (
 
 		<Container className={style.container}>
 			<div className={style.partners_logo}>
-				{
-					partners.map(partnerLogoPath => <img className={style.partner_logo} src={partnerLogoPath} alt="partner logo" />)
-				}
+				{partners.map(partnerLogoPath => (
+					<img className={style.partner_logo} src={partnerLogoPath} alt="partner logo" />
+				))}
 			</div>
 		</Container>
 	</Section>
