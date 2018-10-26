@@ -11,10 +11,10 @@ const Hero = () => (
 	<div class={style.hero}>
 		<Container>
 			<section class={style.block}>
-				<H type="h1">Meeting planning, without the hassle</H>
+				<H type="h1">Finally a calendar for professionals</H>
 
 				<P>
-					Organise, manage and optimise meetings, sync all your calendars together and stay connected with the people you work with.
+					Simple calendar with powerful features to organise meetings faster, within and outside your team.
 				</P>
 
 				<Button label="Get started" to="https://app.timowl.com/register" />
