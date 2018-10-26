@@ -44,6 +44,10 @@
   display: inline-block;
 }
 
+.copyright_text {
+  margin: 10px 0;
+}
+
 @media only screen and (min-width: 841px) {
   .footer {
     font-size: 0.875rem;
@@ -59,10 +63,6 @@
   .copyright {
     order: 2;
     padding: 30px 0;
-  }
-
-  .copyright_text {
-    margin: 10px 0;
   }
 
   .links_1 {
