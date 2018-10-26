@@ -4,7 +4,6 @@ import Section from '../Section';
 import Container from '../Container';
 import TitleSection from '../TitleSection';
 import Plan from '../Plan';
-import H from '../H';
 
 import style from './style';
 

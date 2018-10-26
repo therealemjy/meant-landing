@@ -5,6 +5,7 @@ import H from '../../components/H';
 import P from '../../components/P';
 import TitleSection from '../../components/TitleSection';
 import IllustrationSection from '../../components/IllustrationSection';
+import TestimonialsSection from '../../components/TestimonialsSection';
 import FeaturesSection from '../../components/FeaturesSection';
 import TimeFinder from '../../components/TimeFinder';
 import PlansSection from '../../components/PlansSection';
@@ -84,6 +85,18 @@ const Home = () => (
 					title: 'Clever notifications',
 					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
 					icon: featuresIcons.notifications
+				}]}
+			/>
+
+			<TestimonialsSection
+				testimonials={[{
+					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
+					author: 'Adrien Guilmineau',
+					jobTitle: 'CEO at Sidekick'
+				}, {
+					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
+					author: 'Baptiste Jamin',
+					jobTitle: 'CEO & Co-founder at Crisp'
 				}]}
 			/>
 
