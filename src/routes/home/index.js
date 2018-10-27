@@ -23,6 +23,11 @@ const featuresIcons = {
 	notifications: require('../../assets/images/notifications.svg')
 };
 
+const testimonialsPhotos = {
+	adrien: require('../../assets/images/testimonials-photos/adrien.jpeg'),
+	baptiste: require('../../assets/images/testimonials-photos/baptiste.jpeg')
+};
+
 const Home = () => (
 	<div>
 		<Hero />
@@ -93,13 +98,15 @@ const Home = () => (
 
 			<TestimonialsSection
 				testimonials={[{
-					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
-					author: 'Adrien Guilmineau',
-					jobTitle: 'CEO at Sidekick'
+					text: 'Using Timowl has made my life so much easier! Organising a meeting is nice and easy, no more waste of time trying to find a time that works for everyone: the platform does it for me.',
+					name: 'Adrien Guilmineau',
+					jobTitle: 'CEO at Sidekick',
+					photo: testimonialsPhotos.adrien
 				}, {
-					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
-					author: 'Baptiste Jamin',
-					jobTitle: 'CEO & Co-founder at Crisp'
+					text: 'Organising meetings has always been a nightmare, but Timowl has the tools to fix it. The interface is clean and the support is amazing. I highly recommend giving them a try!',
+					name: 'Baptiste Jamin',
+					jobTitle: 'CEO & Co-founder at Crisp',
+					photo: testimonialsPhotos.baptiste
 				}]}
 			/>
 
