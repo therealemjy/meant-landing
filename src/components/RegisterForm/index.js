@@ -1,5 +1,6 @@
 import { Component } from 'preact';
 import classNames from 'classnames';
+import validator from 'validator';
 
 import Button from '../Button';
 
@@ -12,28 +13,51 @@ export default class RegisterForm extends Component {
 		super();
 
 		this.state = {
-			email: ''
+			email: '',
+			hasError: false
 		};
 	}
 
-	handleEmailChange = event => this.setState({ email: event.target.value });
+	handleEmailChange = event =>
+		this.setState({
+			email: event.target.value,
+			hasError: false
+		});
+
+	register = event => {
+		event.preventDefault();
+
+		const { email } = this.state;
+
+		if (!validator.isEmail(email)) {
+			return this.setState({
+				hasError: true
+			});
+		}
+
+		// Redirect to register page with email field pre-filled
+		window.location.replace(`https://app.timowl.com/register?email=${email}`);
+	};
 
 	render = () => {
 		const { className } = this.props;
-		const { email } = this.state;
+		const { email, hasError } = this.state;
 
 		return (
-			<form className={classNames(style.form, className)}>
-				<div className={style.row}>
+			<div className={classNames(style.container, className)}>
+				<form className={style.row} onSubmit={this.register}>
 					<input
-						type="email"
 						placeholder="Enter your email"
-						className={style.input}
+						className={classNames(style.input, { [style.has_error]: !!hasError })}
 						value={email}
-						onChange={this.handleEmailChange}
+						onInput={this.handleEmailChange}
 					/>
-					<Button className={classNames(style.button, style.button_register)} content="Register" />
-				</div>
+					<Button
+						className={classNames(style.button, style.button_register)}
+						onClick={this.register}
+						content="Register"
+					/>
+				</form>
 
 				<div className={style.row}>
 					<Button
@@ -46,7 +70,7 @@ export default class RegisterForm extends Component {
 						}
 					/>
 				</div>
-			</form>
+			</div>
 		);
 	};
 }
