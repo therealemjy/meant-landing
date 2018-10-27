@@ -17,7 +17,7 @@ const Hero = () => (
 					Simple calendar with powerful features to organise meetings faster, within and outside your team.
 				</P>
 
-				<RegisterForm />
+				<RegisterForm className={style.register_form} />
 			</section>
 
 			<section class={style.illustration_container}>

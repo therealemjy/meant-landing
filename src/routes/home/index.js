@@ -10,7 +10,7 @@ import FeaturesSection from '../../components/FeaturesSection';
 import TimeFinder from '../../components/TimeFinder';
 import PlansSection from '../../components/PlansSection';
 import PartnersSection from '../../components/PartnersSection';
-import RegisterSection from '../../components/RegisterSection';
+import RegisterForm from '../../components/RegisterForm';
 
 import style from './style';
 
@@ -113,7 +113,13 @@ const Home = () => (
 
 			<PlansSection className={style.plans_section} />
 
-			<RegisterSection />
+			<Section className={style.register_section}>
+				<TitleSection className={style.register_section_title} title="Timowl makes teams more efficient" />
+
+				<Container>
+					<RegisterForm className={style.register_form} />
+				</Container>
+			</Section>
 		</div>
 	</div>
 );
