@@ -49,14 +49,7 @@ class Header extends Component {
 
 				<div class={style.nav_container}>
 					<div class={style.nav}>
-						<Link href="https://app.timowl.com/login" className={style.link_sign_in}>Sign in</Link>
-
-						<Button
-							className={style.button}
-							label="Register"
-							to="https://app.timowl.com/register"
-							skeleton
-						/>
+						<Link href="https://app.timowl.com/login" className={style.link_sign_in}>Log in</Link>
 					</div>
 				</div>
 			</Container>

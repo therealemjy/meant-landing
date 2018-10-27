@@ -6,6 +6,8 @@
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  align-items: center;
   height: 50px;
   background-color: #fff;
   border-bottom: 1px solid #c5d4e0;
@@ -13,6 +15,7 @@
 
 .container {
   padding: 12px 15px;
+  flex: 1;
   display: flex;
   justify-content: space-between !important;
 }
@@ -42,10 +45,6 @@
   justify-content: flex-end;
 }
 
-.link_pricing,
-.link_sign_in {
-  display: none;
-}
 
 .button {
   padding: 5px 10px !important;

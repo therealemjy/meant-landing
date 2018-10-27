@@ -1,5 +1,5 @@
 import Container from '../Container';
-import Button from '../Button';
+import RegisterForm from '../RegisterForm';
 import H from '../H';
 import P from '../P';
 
@@ -11,13 +11,13 @@ const Hero = () => (
 	<div class={style.hero}>
 		<Container>
 			<section class={style.block}>
-				<H type="h1">Finally a calendar for professionals</H>
+				<H className={style.title} type="h1">Finally a calendar for professionals</H>
 
-				<P>
+				<P className={style.paragraph}>
 					Simple calendar with powerful features to organise meetings faster, within and outside your team.
 				</P>
 
-				<Button label="Get started" to="https://app.timowl.com/register" />
+				<RegisterForm />
 			</section>
 
 			<section class={style.illustration_container}>

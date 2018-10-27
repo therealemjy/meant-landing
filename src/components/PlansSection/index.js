@@ -22,7 +22,7 @@ const PlansSection = ({ className }) => (
 			<div class={style.colored_background} />
 		</div>
 
-		<Container className={style.container}>
+		<Container>
 			<Plan
 				className={style.plan}
 				name="Professionals"

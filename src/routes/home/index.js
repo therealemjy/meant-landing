@@ -10,6 +10,7 @@ import FeaturesSection from '../../components/FeaturesSection';
 import TimeFinder from '../../components/TimeFinder';
 import PlansSection from '../../components/PlansSection';
 import PartnersSection from '../../components/PartnersSection';
+import RegisterSection from '../../components/RegisterSection';
 
 import style from './style';
 
@@ -110,9 +111,9 @@ const Home = () => (
 				}]}
 			/>
 
-			<PlansSection
-				className={style.plans_section}
-			/>
+			<PlansSection className={style.plans_section} />
+
+			<RegisterSection />
 		</div>
 	</div>
 );

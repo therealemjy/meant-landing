@@ -15,7 +15,7 @@ const Plan = ({ className, children, name, price, note, buttonLabel, bottomNote,
 
 		<div class={style.content}>{ children }</div>
 
-		{ !!buttonLabel && !!to && <Button className={style.button} label={buttonLabel} to={to} /> }
+		{ !!buttonLabel && !!to && <Button className={style.button} content={buttonLabel} to={to} /> }
 
 		{ !!bottomNote && <P className={style.button_note}>{ bottomNote }</P> }
 	</div>
