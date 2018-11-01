@@ -22,7 +22,7 @@ const PrivacyPolicy = () => (
 
 			<H type="h3">Respect of Privacy</H>
 			
-			<P>Meant.com takes user privacy seriously.</P>
+			<P>Meant.co takes user privacy seriously.</P>
 
 			<Ul>
 				<Li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</Li>
