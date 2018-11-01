@@ -3,14 +3,14 @@ import Link from '../Link';
 
 import style from './style';
 
-// const timowlLogo = require('../../assets/images/logo-grey.svg');
+// const logo = require('../../assets/images/logo-grey.svg');
 
 const Footer = () => (
 	<footer class={style.footer}>
 		<Container className={style.container}>
 			<div class={[style.section, style.copyright].join(' ')}>
-				{/* <img class={style.logo} src={timowlLogo} alt="Grey Timowl Logo" /> */}
-				<span class={style.copyright_text}>Copyright &copy; 2018 Timowl</span>
+				{/* <img class={style.logo} src={logo} alt="Grey Meant Logo" /> */}
+				<span class={style.copyright_text}>Copyright &copy; 2018 Meant</span>
 				<span class={style.copyright_family}>
 					Part of{' '}
 					<a
@@ -25,13 +25,13 @@ const Footer = () => (
 			</div>
 
 			<div class={[style.section, style.links_1].join(' ')}>
-				<Link className={style.link} href="https://www.facebook.com/gettimowl/">
+				<Link className={style.link} href="https://www.facebook.com/gethermes/">
 					Facebook
 				</Link>
 				<Link className={style.link} href="https://twitter.com/MeetHermes">
 					Twitter
 				</Link>
-				<Link className={style.link} href="mailto:hello@timowl.io">
+				<Link className={style.link} href="mailto:hello@meant.co">
 					Contact us
 				</Link>
 			</div>

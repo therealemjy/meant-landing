@@ -38,7 +38,7 @@ const Home = () => (
 		<div class={style.features_container}>
 			{/* <TitleSection
 				title="A software you deserve"
-				text="Timowl reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+				text="Meant reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 			/> */}
 
 			<IllustrationSection
@@ -57,7 +57,7 @@ const Home = () => (
 				illustration={roomsPage}
 				features={[{
 					title: 'Scale',
-					text: 'Expand your workspace as your team grows. Timowl manages meeting rooms out-of-the-box.',
+					text: 'Expand your workspace as your team grows. Meant manages meeting rooms out-of-the-box.',
 				}, {
 					title: 'Browse',
 					text: 'Find and reserve rooms based on your needs and availabilities, in real-time.',
@@ -77,7 +77,7 @@ const Home = () => (
 
 			<TitleSection
 				title="All you need in one platform"
-				text="No more juggling between several apps. Timowl is the only service you will ever need to schedule meetings within and outside your team."
+				text="No more juggling between several apps. Meant is the only service you will ever need to schedule meetings within and outside your team."
 				noPaddingBottom
 			/>
 
@@ -99,12 +99,12 @@ const Home = () => (
 
 			<TestimonialsSection
 				testimonials={[{
-					text: 'Using Timowl has made my life so much easier! Organising a meeting is nice and easy, no more waste of time trying to find a time that works for everyone: the platform does it for me.',
+					text: 'Using Meant has made my life so much easier! Organising a meeting is nice and easy, no more waste of time trying to find a time that works for everyone: the platform does it for me.',
 					name: 'Adrien Guilmineau',
 					jobTitle: 'CEO at Sidekick',
 					photo: testimonialsPhotos.adrien
 				}, {
-					text: 'Organising meetings has always been a nightmare, but Timowl has the tools to fix it. The interface is clean and the support is amazing. I highly recommend giving them a try!',
+					text: 'Organising meetings has always been a nightmare, but Meant has the tools to fix it. The interface is clean and the support is amazing. I highly recommend giving them a try!',
 					name: 'Baptiste Jamin',
 					jobTitle: 'CEO & Co-founder at Crisp',
 					photo: testimonialsPhotos.baptiste
@@ -114,7 +114,7 @@ const Home = () => (
 			<PlansSection className={style.plans_section} />
 
 			<Section className={style.register_section}>
-				<TitleSection className={style.register_section_title} title="Timowl makes teams more efficient" />
+				<TitleSection className={style.register_section_title} title="Meant makes teams more efficient" />
 
 				<Container>
 					<RegisterForm className={style.register_form} />

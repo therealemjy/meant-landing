@@ -36,7 +36,7 @@ export default class RegisterForm extends Component {
 		}
 
 		// Redirect to register page with email field pre-filled
-		window.location.replace(`https://app.timowl.com/register?email=${email}`);
+		window.location.replace(`https://app.meant.co/register?email=${email}`);
 	};
 
 	render = () => {

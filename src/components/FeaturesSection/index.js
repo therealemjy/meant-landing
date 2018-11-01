@@ -10,7 +10,7 @@ const FeaturesSection = ({ features, className }) => (
 		<Container className={style.container}>
 			{features.map(feature => (
 				<div class={style.feature}>
-					<img class={style.icon} src={feature.icon} alt="Timowl" />
+					<img class={style.icon} src={feature.icon} alt="Meant" />
 					<H type="h3">{ feature.title }</H>
 					<P small>{ feature.text }</P>
 				</div>

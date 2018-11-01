@@ -24,7 +24,7 @@ const Hero = () => (
 				<img
 					class={style.illustration}
 					src={illustration}
-					alt="Timowl is your central place for meeting and meeting rooms management"
+					alt="Meant is your central place for meeting and meeting rooms management"
 				/>
 			</section>
 
