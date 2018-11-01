@@ -32,7 +32,7 @@ const Home = () => (
 		<div class={style.features_container}>
 			{/* <TitleSection
 				title="A software you deserve"
-				text="Timowl reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
+				text="Meant reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 			/> */}
 
 			<IllustrationSection
@@ -51,7 +51,7 @@ const Home = () => (
 				illustration={roomsPage}
 				features={[{
 					title: 'Scale',
-					text: 'Expand your workspace as your team grows. Timowl manages meeting rooms out-of-the-box.',
+					text: 'Expand your workspace as your team grows. Meant manages meeting rooms out-of-the-box.',
 				}, {
 					title: 'Browse',
 					text: 'Find and reserve rooms based on your needs and availabilities, in real-time.',
@@ -71,7 +71,7 @@ const Home = () => (
 
 			<TitleSection
 				title="All you need in one platform"
-				text="No more juggling between several apps. Timowl is the only service you will ever need to schedule meetings within and outside your team."
+				text="No more juggling between several apps. Meant is the only service you will ever need to schedule meetings within and outside your team."
 				noPaddingBottom
 			/>
 
@@ -93,11 +93,11 @@ const Home = () => (
 
 			<TestimonialsSection
 				testimonials={[{
-					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
+					text: 'Using Meant has made my life so much easier! Organising a meeting is nice and easy, no more waste of time trying to find a time that works for everyone: the platform does it for me.',
 					author: 'Adrien Guilmineau',
 					jobTitle: 'CEO at Sidekick'
 				}, {
-					text: 'Get notified when a meeting is about to start or has been updated, so you always stay in the loop.',
+					text: 'Organising meetings has always been a nightmare, but Meant has the tools to fix it. The interface is clean and the support is amazing. I highly recommend giving them a try!',
 					author: 'Baptiste Jamin',
 					jobTitle: 'CEO & Co-founder at Crisp'
 				}]}

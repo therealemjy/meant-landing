@@ -17,14 +17,14 @@ const Hero = () => (
 					Simple calendar with powerful features to organise meetings faster, within and outside your team.
 				</P>
 
-				<Button label="Get started" to="https://app.timowl.com/register" />
+				<Button label="Get started" to="https://app.meant.co/register" />
 			</section>
 
 			<section class={style.illustration_container}>
 				<img
 					class={style.illustration}
 					src={illustration}
-					alt="Timowl is your central place for meeting and meeting rooms management"
+					alt="Meant is your central place for meeting and meeting rooms management"
 				/>
 			</section>
 

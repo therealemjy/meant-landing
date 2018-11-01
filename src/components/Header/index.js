@@ -7,7 +7,7 @@ import Button from '../Button';
 
 import style from './style';
 
-// const timowlLogo = require('../../assets/images/logo-blue.svg');
+// const meantLogo = require('../../assets/images/logo-blue.svg');
 
 class Header extends Component {
 	state = {
@@ -40,21 +40,21 @@ class Header extends Component {
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
 			<Container className={style.container}>
 				<a class={style.brand} href="/">
-					{/* <img class={style.logo} src={timowlLogo} alt="Timowl logo" /> */}
+					{/* <img class={style.logo} src={meantLogo} alt="Meant logo" /> */}
 
 					<h3 class={style.name}>
-						Timowl
+						Meant
 					</h3>
 				</a>
 
 				<div class={style.nav_container}>
 					<div class={style.nav}>
-						<Link href="https://app.timowl.com/login" className={style.link_sign_in}>Sign in</Link>
+						<Link href="https://app.meant.co/login" className={style.link_sign_in}>Sign in</Link>
 
 						<Button
 							className={style.button}
 							label="Register"
-							to="https://app.timowl.com/register"
+							to="https://app.meant.co/register"
 							skeleton
 						/>
 					</div>

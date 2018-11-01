@@ -18,11 +18,11 @@ const PrivacyPolicy = () => (
 				The following outlines our privacy policy.
 			</P>
 
-			<P>User data is safely stored in Europe. The Timowl core infrastructure is hosted in London, United Kingdom.</P>
+			<P>User data is safely stored in Europe. The Meant core infrastructure is hosted in London, United Kingdom.</P>
 
 			<H type="h3">Respect of Privacy</H>
 			
-			<P>Timowl.com takes user privacy seriously.</P>
+			<P>Meant.co takes user privacy seriously.</P>
 
 			<Ul>
 				<Li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</Li>
