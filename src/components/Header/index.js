@@ -3,7 +3,6 @@ import classNames from 'classnames';
 
 import Container from '../Container';
 import Link from '../Link';
-import Button from '../Button';
 
 import style from './style';
 
