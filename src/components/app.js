@@ -6,7 +6,7 @@ import Context from '../context';
 import Header from './Header';
 import Footer from './Footer';
 
-import { GOOGLE_CLIENT_ID, GOOGLE_SCOPE } from '../constants';
+import { GOOGLE_CLIENT_ID, GOOGLE_SCOPE, API_URL } from '../constants';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import PrivacyPolicy from '../routes/privacy-policy';
@@ -31,7 +31,7 @@ export default class App extends Component {
 	handleGoogleSignIn = async () => {
 		try {
 			const { data: { data, errors } } = await axios.post(
-				'http://localhost:3000/graphql',
+				API_URL,
 				{
 					query,
 					variables: { scenario: 'teamCreation' }
@@ -69,8 +69,6 @@ export default class App extends Component {
 
 		js.onload = () =>
 			window.gapi.load('auth2', () => {
-				console.log('Loaded');
-
 				this.setState({
 					isScriptLoading: false
 				});

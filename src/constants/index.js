@@ -1,4 +1,4 @@
-export const CONTEXT_GOOGLE_OAUTH = 'googleOAuth';
+export const API_URL = 'https://api.get-hermes.com/graphql';
 
 export const GOOGLE_CLIENT_ID = '1039661967619-u3mp6eeh9n1a4itp13bueufktnk71b19.apps.googleusercontent.com';
 export const GOOGLE_SCOPE =
