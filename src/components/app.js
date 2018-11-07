@@ -1,5 +1,6 @@
 import { Component } from 'preact';
 import { Router } from 'preact-router';
+import axios from 'axios';
 
 import Context from '../context';
 import Header from './Header';
@@ -14,6 +15,12 @@ import TermsOfUse from '../routes/terms-of-use';
 import 'normalize.css';
 import style from './style';
 
+const query = `
+	query generateGoogleCalendarAuthUrl($scenario: String!) {
+		generateGoogleCalendarAuthUrl(scenario: $scenario)
+	}
+`;
+
 export default class App extends Component {
 	state = {
 		isScriptLoading: true
@@ -21,13 +28,30 @@ export default class App extends Component {
 
 	handleRoute = event => (this.currentUrl = event.url);
 
-	handleGoogleSignIn = () => {
-		const auth2 = window.gapi.auth2.getAuthInstance();
-		const options = {
-			prompt: 'consent'
-		};
+	handleGoogleSignIn = async () => {
+		try {
+			const { data: { data, errors } } = await axios.post(
+				'http://localhost:3000/graphql',
+				{
+					query,
+					variables: { scenario: 'teamCreation' }
+				},
+				{
+					'Content-Type': 'application/json',
+					Accept: 'application/json'
+				}
+			);
 
-		auth2.signIn(options).then(googleUser => console.log(googleUser));
+			if (errors) {
+				throw errors[0];
+			}
+
+			// Redirect to Google Auth URL
+			window.location.replace(data.generateGoogleCalendarAuthUrl);
+		}
+		catch (error) {
+			console.log(error);
+		}
 	};
 
 	componentDidMount() {
