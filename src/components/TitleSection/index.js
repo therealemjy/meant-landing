@@ -6,11 +6,12 @@ import P from '../P';
 
 import style from './style';
 
-const TitleSection = ({ title, text, className, noPaddingBottom = false }) => (
+const TitleSection = ({ title, text, className, noPaddingBottom = false, noPaddingTop = false }) => (
 	<Section
 		className={classNames(
 			style.title_section,
 			{ [style.no_padding_bottom]: !!noPaddingBottom },
+			{ [style.no_padding_top]: !!noPaddingTop },
 			className
 		)}
 	>

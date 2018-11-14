@@ -8,9 +8,10 @@
   right: 0;
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 60px;
+  line-height: 60px;
   background-color: #fff;
-  border-bottom: 1px solid #c5d4e0;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .container {
@@ -21,7 +22,9 @@
 }
 
 .logo {
-  height: 26px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .brand {
