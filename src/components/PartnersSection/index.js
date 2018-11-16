@@ -15,7 +15,7 @@ const partners = [
 
 const PartnersSection = ({ className }) => (
 	<Section className={classNames(style.partners, className)}>
-		<TitleSection className={style.title} title="Trusted by" />
+		<TitleSection className={style.title} title="Trusted by" noPaddingTop />
 
 		<Container className={style.container}>
 			<div className={style.partners_logo}>

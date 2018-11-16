@@ -6,7 +6,7 @@ import Link from '../Link';
 
 import style from './style';
 
-// const logo = require('../../assets/images/logo-blue.svg');
+const logo = require('../../assets/images/meant-logo.svg');
 
 class Header extends Component {
 	state = {
@@ -39,11 +39,7 @@ class Header extends Component {
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
 			<Container className={style.container}>
 				<a class={style.brand} href="/">
-					{/* <img class={style.logo} src={logo} alt="Meant logo" /> */}
-
-					<h3 class={style.name}>
-						Meant
-					</h3>
+					<img class={style.logo} src={logo} alt="Meant logo" />
 				</a>
 
 				<div class={style.nav_container}>
