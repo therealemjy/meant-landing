@@ -19,16 +19,16 @@ const Footer = () => (
 						rel="noopener noreferrer"
 						href="https://www.thefamily.co/"
 					>
-						TheFamily 🖤
+						The Family 🖤
 					</a>
 				</span>
 			</div>
 
 			<div class={[style.section, style.links_1].join(' ')}>
-				<Link className={style.link} href="https://www.facebook.com/gethermes/">
+				<Link className={style.link} href="https://www.facebook.com/meantHQ/">
 					Facebook
 				</Link>
-				<Link className={style.link} href="https://twitter.com/MeetHermes">
+				<Link className={style.link} href="https://twitter.com/meanthq">
 					Twitter
 				</Link>
 				<Link className={style.link} href="mailto:hello@meant.co">
