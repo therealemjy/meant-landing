@@ -1,3 +1,5 @@
+@import '../../css/_variables';
+
 .features_container {
 	background-color: #ffffff;
 	padding-top: 45px;
@@ -28,12 +30,47 @@
 	}
 }
 
+.register_section {
+	padding-bottom: 75px;
+}
+
+.register_section,
+.register_section_title {
+  background-color: #ffffff;  
+  position: relative;
+}
+
+.register_form {
+  margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
+
+.background,
+.wave,
+.colored_background {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.background {
+  top: 0;
+	bottom: 0;
+	z-index: 0;
+}
+
+.wave {
+  bottom: 0;
+  width: 100%;
+}
+
 @media only screen and (min-width: 841px) {
 	.features_container {
 		padding-top: 75px;
 	}
 
-	.plans_section {
-		padding-bottom: 120px;
+	.register_section {
+		padding-bottom: 225px;
 	}
 }

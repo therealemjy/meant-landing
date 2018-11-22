@@ -17,6 +17,11 @@
   margin-bottom: 45px;
 }
 
+.register_form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .illustration {
   display: block;
   max-width: 100%;
@@ -25,7 +30,7 @@
 
 @media only screen and (min-width: 841px) {
   .hero {
-    padding-top: 35px;
+    padding-top: 75px;
     padding-bottom: 125px;
   }
 
@@ -37,6 +42,19 @@
     flex: 2;
     padding-right: 15px;
     margin-bottom: 0;
+  }
+
+  .register_form {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  .paragraph {
+    margin-bottom: 60px;
   }
 
   .illustration_container {

@@ -29,11 +29,14 @@
     "sass-loader": "^7.0.3"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "classnames": "^2.2.6",
     "normalize.css": "^8.0.0",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
-    "preact-router": "^2.5.7"
+    "preact-context": "^1.1.2",
+    "preact-router": "^2.5.7",
+    "validator": "^10.8.0"
   },
   "jest": {
     "verbose": true,

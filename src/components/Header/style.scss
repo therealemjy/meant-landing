@@ -6,19 +6,25 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  line-height: 60px;
   background-color: #fff;
-  border-bottom: 1px solid #c5d4e0;
+  border-bottom: 1px solid #e7e7e7;
 }
 
 .container {
   padding: 12px 15px;
+  flex: 1;
   display: flex;
   justify-content: space-between !important;
 }
 
 .logo {
-  height: 26px;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .brand {
@@ -42,10 +48,6 @@
   justify-content: flex-end;
 }
 
-.link_pricing,
-.link_sign_in {
-  display: none;
-}
 
 .button {
   padding: 5px 10px !important;
@@ -68,11 +70,9 @@
     padding: 17px 15px;
   }
 
-  .link_pricing,
   .link_sign_in {
     display: initial;
     color: $blue-grey;
-    margin-right: 20px;
     padding: 10px;
     text-decoration: none;
   }

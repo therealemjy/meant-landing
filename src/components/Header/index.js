@@ -3,11 +3,10 @@ import classNames from 'classnames';
 
 import Container from '../Container';
 import Link from '../Link';
-import Button from '../Button';
 
 import style from './style';
 
-// const meantLogo = require('../../assets/images/logo-blue.svg');
+const logo = require('../../assets/images/meant-logo.svg');
 
 class Header extends Component {
 	state = {
@@ -40,23 +39,12 @@ class Header extends Component {
 		<header class={classNames(style.header, { [style.header_scrolled]: this.state.isScrolled })}>
 			<Container className={style.container}>
 				<a class={style.brand} href="/">
-					{/* <img class={style.logo} src={meantLogo} alt="Meant logo" /> */}
-
-					<h3 class={style.name}>
-						Meant
-					</h3>
+					<img class={style.logo} src={logo} alt="Meant logo" />
 				</a>
 
 				<div class={style.nav_container}>
 					<div class={style.nav}>
-						<Link href="https://app.meant.co/login" className={style.link_sign_in}>Sign in</Link>
-
-						<Button
-							className={style.button}
-							label="Register"
-							to="https://app.meant.co/register"
-							skeleton
-						/>
+						<Link href="https://app.meant.co/login" className={style.link_sign_in}>Log in</Link>
 					</div>
 				</div>
 			</Container>

@@ -12,12 +12,20 @@ const Testimonials = ({ className, testimonials }) => (
 		<TitleSection title="Our users love us" />
 
 		<Container className={style.container}>
-			{testimonials.map(({ text, author, jobTitle }) => (
+			{testimonials.map(({ text, name, photo, jobTitle }) => (
 				<div className={style.testimonial}>
 					<P className={style.testimonial_text}>“{text}”</P>
-					<span className={style.testimonial_author}>
-						<strong>{author}</strong>, {jobTitle}
-					</span>
+
+					<div className={style.testimonial_author}>
+						<div className={style.testimonial_author_left}>
+							<img className={style.testimonial_photo} src={photo} alt={`${name}, ${jobTitle}`} />
+						</div>
+
+						<div className={style.testimonial_author_right}>
+							<div className={style.testimonial_name}>{name}</div>
+							<div className={style.testimonial_job_title}>{jobTitle}</div>
+						</div>
+					</div>
 				</div>
 			))}
 		</Container>
