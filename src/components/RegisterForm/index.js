@@ -4,16 +4,20 @@ import Button from '../Button';
 
 import style from './style';
 
-const RegisterForm = ({ className }, context) => {
+const RegisterForm = ({ className, firebase }) => {
 	// access to firebase for Github login here
 	// docs: https://firebase.google.com/docs/auth/web/github-auth
-	console.log('RegisterForm rest of context', context);
+	console.log('RegisterForm firebase', firebase);
+
+	const onButtonClick = () => {
+		firebase.doSignInWithGithub();
+	};
 
 	return (
 		<div className={classNames(style.container, className)}>
 			<div className={style.row}>
 				<Button
-					// onClick={onButtonClick}
+					onClick={onButtonClick}
 					className={classNames(style.button, style.button_github)}
 					content={
 						<div className={style.button_github_content}>

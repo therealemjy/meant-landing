@@ -21,7 +21,7 @@ const Hero = () => (
 				</P>
 
 				<FirebaseContext.Consumer>
-					{context => <RegisterForm className={style.register_form} {...context} />}
+					{firebase => <RegisterForm className={style.register_form} firebase={firebase} />}
 				</FirebaseContext.Consumer>
 			</section>
 
