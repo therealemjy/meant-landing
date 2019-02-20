@@ -2,7 +2,7 @@ import { Component } from 'preact';
 import classNames from 'classnames';
 
 import Container from '../Container';
-import Link from '../Link';
+// import Link from '../Link';
 
 import style from './style';
 
@@ -42,11 +42,11 @@ class Header extends Component {
 					<img class={style.logo} src={logo} alt="Meant logo" />
 				</a>
 
-				<div class={style.nav_container}>
+				{/* <div class={style.nav_container}>
 					<div class={style.nav}>
 						<Link href="https://app.meant.co/login" className={style.link_sign_in}>Log in</Link>
 					</div>
-				</div>
+				</div> */}
 			</Container>
 		</header>
 	);

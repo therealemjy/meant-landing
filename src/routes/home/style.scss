@@ -1,7 +1,7 @@
 @import '../../css/_variables';
 
 .features_container {
-	background-color: #ffffff;
+	background-color: $railGrey;
 	padding-top: 45px;
 }
 
@@ -36,7 +36,7 @@
 
 .register_section,
 .register_section_title {
-  background-color: #ffffff;  
+  background-color: $railGrey;  
   position: relative;
 }
 

@@ -2,15 +2,8 @@
 
 .hero {
   position: relative;
-  background-color: $light-blue-grey;
+  background-color: $railGrey;
   padding: 25px 0 90px;
-}
-
-.wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
 }
 
 .block {
@@ -24,7 +17,7 @@
 
 .illustration {
   display: block;
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -32,10 +25,6 @@
   .hero {
     padding-top: 75px;
     padding-bottom: 125px;
-  }
-
-  .wave {
-    height: 25%;
   }
 
   .block {
@@ -50,11 +39,12 @@
   }
 
   .title {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   .paragraph {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+    color: $coolGrey;
   }
 
   .illustration_container {

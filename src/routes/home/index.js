@@ -1,4 +1,4 @@
-import Context from '../../context';
+// import Context from '../../context';
 import Section from '../../components/Section';
 import Hero from '../../components/Hero';
 import Container from '../../components/Container';
@@ -34,7 +34,7 @@ const Home = () => (
 	<div>
 		<Hero />
 
-		<PartnersSection />
+		{/* <PartnersSection /> */}
 
 		<div class={style.features_container}>
 			{/* <TitleSection
@@ -42,7 +42,7 @@ const Home = () => (
 				text="Meant reduces the time spent in planning meetings, manages your meeting rooms and boosts your team’s productivity regardless of your company size."
 			/> */}
 
-			<IllustrationSection
+			{/* <IllustrationSection
 				className={style.meetings_page_section}
 				illustration={meetingsPage}
 				features={[{
@@ -64,9 +64,9 @@ const Home = () => (
 					text: 'Find and reserve rooms based on your needs and availabilities, in real-time.'
 				}]}
 				reverse
-			/>
+			/> */}
 
-			<Section className={style.time_finder_section}>
+			{/* <Section className={style.time_finder_section}>
 				<Section>
 					<Container className={style.time_finder_container}>
 						<H className={style.time_finder_section_title}>Plan smarter and faster</H>
@@ -80,9 +80,9 @@ const Home = () => (
 				title="All you need in one platform"
 				text="No more juggling between several apps. Meant is the only service you will ever need to schedule meetings within and outside your team."
 				noPaddingBottom
-			/>
+			/> */}
 
-			<FeaturesSection
+			{/* <FeaturesSection
 				features={[
 					{
 						title: 'Useful integrations',
@@ -102,9 +102,9 @@ const Home = () => (
 						icon: featuresIcons.notifications
 					}
 				]}
-			/>
+			/> */}
 
-			<TestimonialsSection
+			{/* <TestimonialsSection
 				testimonials={[
 					{
 						text:
@@ -121,11 +121,11 @@ const Home = () => (
 						photo: testimonialsPhotos.baptiste
 					}
 				]}
-			/>
+			/> */}
 
 			{/* <PlansSection className={style.plans_section} /> */}
 
-			<Section className={style.register_section}>
+			{/* <Section className={style.register_section}>
 				<TitleSection className={style.register_section_title} title="Meant makes teams more efficient" />
 
 				<Container>
@@ -138,7 +138,7 @@ const Home = () => (
 						<path fill="#f2f6fa" fill-rule="nonzero" d="M720 50.8063568c-155.55336-67.7418088-395.55336-67.7418088-720 0V112h1440V50.8063568c-324.44664 67.74180996-564.44664 67.74180996-720 0z" />
 					</svg>
 				</div>
-			</Section>
+			</Section> */}
 		</div>
 	</div>
 );

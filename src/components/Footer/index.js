@@ -10,7 +10,7 @@ const Footer = () => (
 		<Container className={style.container}>
 			<div class={[style.section, style.copyright].join(' ')}>
 				{/* <img class={style.logo} src={logo} alt="Grey Meant Logo" /> */}
-				<span class={style.copyright_text}>Copyright &copy; 2018 Meant</span>
+				<span class={style.copyright_text}>Copyright &copy; 2019 Meant</span>
 				<span class={style.copyright_family}>
 					Part of{' '}
 					<a
@@ -19,7 +19,7 @@ const Footer = () => (
 						rel="noopener noreferrer"
 						href="https://www.thefamily.co/"
 					>
-						The Family 🖤
+						The Family ♥
 					</a>
 				</span>
 			</div>

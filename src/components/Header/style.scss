@@ -10,8 +10,8 @@
   align-items: center;
   height: 60px;
   line-height: 60px;
-  background-color: #fff;
-  border-bottom: 1px solid #e7e7e7;
+  background-color: $railGrey;
+  // border-bottom: 1px solid #e7e7e7;
 }
 
 .container {
@@ -22,7 +22,7 @@
 }
 
 .logo {
-  width: 100px;
+  width: 50px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -62,7 +62,7 @@
   }
 
   .header:not(.header_scrolled) {
-    background-color: $light-blue-grey;
+    background-color: $railGrey;
     border-bottom-color: transparent;
   }
 
@@ -81,13 +81,13 @@
     padding: 8px 15px !important;
   }
 
-  .header.header_scrolled .button {
-    background-color: $blue !important;
-    color: #ffffff;
+  // .header.header_scrolled .button {
+  //   background-color: $blue !important;
+  //   color: #ffffff;
 
-    &:hover {
-      background-color: #2c6cd5 !important;
-      border-color: #2c6cd5 !important;
-    }
-  }
+  //   &:hover {
+  //     background-color: #2c6cd5 !important;
+  //     border-color: #2c6cd5 !important;
+  //   }
+  // }
 }

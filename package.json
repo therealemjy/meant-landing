@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "komete-landing-2",
+  "name": "meant-landing",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -32,6 +32,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "firebase": "^5.8.3",
     "normalize.css": "^8.0.0",
     "preact": "^8.2.6",
     "preact-compat": "^3.17.0",
