@@ -1,7 +1,6 @@
 @import '../../css/_variables';
 
 .features_container {
-	background-color: $railGrey;
 	padding-top: 45px;
 }
 
@@ -10,67 +9,30 @@
 	margin: 0 auto;
 }
 
-.time_finder_section {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-
-.time_finder_section_title {
-	margin-bottom: 30px;
-}
-
-.time_finder_container {
-	display: block;
-	max-width: 650px;
-	text-align: center;
-	margin: 0 auto;
-
-	& > *:last-child {
-		margin-bottom: 0;
-	}
-}
-
-.register_section {
-	padding-bottom: 75px;
-}
-
 .register_section,
 .register_section_title {
-  background-color: $railGrey;  
   position: relative;
 }
 
-.register_form {
+.register_section {
+	padding-bottom: 60px;
+}
+
+.register_section_title {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.register_section_form {
   margin-left: auto;
 	margin-right: auto;
 	z-index: 1;
 }
 
-.background,
-.wave,
-.colored_background {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.background {
-  top: 0;
-	bottom: 0;
-	z-index: 0;
-}
-
-.wave {
-  bottom: 0;
-  width: 100%;
-}
-
 @media only screen and (min-width: 841px) {
-	.features_container {
-		padding-top: 75px;
-	}
-
 	.register_section {
-		padding-bottom: 225px;
+		padding-top: 130px;
+		padding-bottom: 145px;
 	}
 }

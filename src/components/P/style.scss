@@ -1,15 +1,15 @@
 @import '../../css/_variables';
 
 .p {
-  color: $blue-grey;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  color: $coolGrey;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 841px) {
   .p.small {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }

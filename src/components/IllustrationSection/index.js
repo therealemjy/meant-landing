@@ -9,7 +9,7 @@ import style from './style';
 
 const IllustrationSection = ({ illustration, features, className, reverse = false }) => (
 	<Section className={className}>
-		<Container className={style.container}>
+		<Container>
 			<div class={classNames(style.illustration_container, { [style.reverse]: !!reverse })}>
 				<img
 					class={style.illustration}
@@ -23,7 +23,7 @@ const IllustrationSection = ({ illustration, features, className, reverse = fals
 					<div class={style.feature}>
 						<H type="h3">{ feature.title }</H>
 
-						<P small>{ feature.text }</P>
+						<P>{ feature.text }</P>
 					</div>
 				))}
 			</div>

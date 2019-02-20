@@ -2,8 +2,7 @@
 
 .hero {
   position: relative;
-  background-color: $railGrey;
-  padding: 25px 0 90px;
+  padding: 25px 0 30px;
 }
 
 .block {
@@ -17,19 +16,18 @@
 
 .illustration {
   display: block;
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 841px) {
   .hero {
-    padding-top: 75px;
-    padding-bottom: 125px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 
   .block {
-    flex: 2;
-    padding-right: 15px;
+    flex: 1;
+    padding-right: 30px;
     margin-bottom: 0;
   }
 
@@ -44,12 +42,12 @@
 
   .paragraph {
     margin-bottom: 40px;
-    color: $coolGrey;
+    padding-right: 30px;
   }
 
   .illustration_container {
-    flex: 3;
-    padding-left: 15px;
+    flex: 1;
+    padding-left: 30px;
   }
 
   .illustration {
