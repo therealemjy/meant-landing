@@ -11,7 +11,7 @@ const config = {
 	messagingSenderId: '745848353385'
 };
 
-class Firebase {
+export default class Firebase {
 	constructor() {
 		app.initializeApp(config);
 		this.auth = app.auth();
@@ -19,7 +19,7 @@ class Firebase {
 		this.saveGithubUsers = app.functions().httpsCallable('saveGithubUsers');
 	}
 
-	doSignInWithGithub =  async () => {
+	signInWithGithub =  async () => {
 		// log in GA
 		window.ga('send', {
 			hitType: 'event',
@@ -76,5 +76,3 @@ class Firebase {
 		return result;
 	};
 }
-
-export default Firebase;
