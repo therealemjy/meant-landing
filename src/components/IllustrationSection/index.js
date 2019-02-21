@@ -10,14 +10,6 @@ import style from './style';
 const IllustrationSection = ({ illustration, features, className, reverse = false }) => (
 	<Section className={className}>
 		<Container>
-			<div class={classNames(style.illustration_container, { [style.reverse]: !!reverse })}>
-				<img
-					class={style.illustration}
-					src={illustration}
-					alt="Clean and simple calendar interface"
-				/>
-			</div>
-
 			<div class={classNames(style.block, { [style.reverse]: !!reverse })}>
 				{features.map(feature => (
 					<div class={style.feature}>
@@ -26,6 +18,14 @@ const IllustrationSection = ({ illustration, features, className, reverse = fals
 						<P>{ feature.text }</P>
 					</div>
 				))}
+			</div>
+
+			<div class={classNames(style.illustration_container, { [style.reverse]: !!reverse })}>
+				<img
+					class={style.illustration}
+					src={illustration}
+					alt="Clean and simple calendar interface"
+				/>
 			</div>
 		</Container>
 	</Section>

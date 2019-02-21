@@ -41,7 +41,7 @@ class RegisterForm extends Component {
 						<div className={style.alert_block}>
 							<span className={style.alert_block_title}>Thanks for registering!</span>
 							<P className={style.alert_block_message}>
-								We are onboarding dozens of new teams everyday and we can’t wait to have you onboard.
+								We are welcoming dozens of new teams everyday and we can’t wait to have you onboard.
 								One of our team members will shortly contact you by email. 🎉
 							</P>
 						</div>
