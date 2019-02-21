@@ -5,10 +5,6 @@ import Button from '../Button';
 import style from './style';
 
 const RegisterForm = ({ className, firebase }) => {
-	// access to firebase for Github login here
-	// docs: https://firebase.google.com/docs/auth/web/github-auth
-	console.log('RegisterForm firebase', firebase);
-
 	const onButtonClick = () => {
 		firebase.doSignInWithGithub();
 	};

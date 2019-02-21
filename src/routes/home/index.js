@@ -46,7 +46,7 @@ const Home = () => (
 
 				<Container>
 					<FirebaseContext.Consumer>
-						{context => <RegisterForm className={style.register_section_form} {...context} />}
+						{firebase => <RegisterForm className={style.register_form} firebase={firebase} />}
 					</FirebaseContext.Consumer>
 				</Container>
 			</Section>
