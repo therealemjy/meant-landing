@@ -1,6 +1,6 @@
 import { Component } from 'preact';
 import classNames from 'classnames';
-import { withFirebase } from '../Firebase';
+import withFirebase from '../../hoc/withFirebase';
 import Button from '../Button';
 
 import style from './style';

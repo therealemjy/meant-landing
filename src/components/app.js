@@ -3,7 +3,8 @@ import { Router } from 'preact-router';
 
 import Header from './Header';
 import Footer from './Footer';
-import Firebase, { FirebaseContext } from './Firebase';
+import Firebase from '../libs/firebase';
+import FirebaseContext from '../context/firebase';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
