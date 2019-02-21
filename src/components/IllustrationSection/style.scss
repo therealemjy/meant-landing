@@ -1,5 +1,9 @@
 @import '../../css/_variables';
 
+.container {
+  position: relative;
+}
+
 .block {
   margin-bottom: 45px;
 }
@@ -27,14 +31,14 @@
     padding-right: 30px;
   }
   
-  .illustration_container .illustration {
-    margin-left: 0;
-  }
+  // .illustration_container .illustration {
+  //   margin-left: 0;
+  // }
 
-  .illustration_container.reverse .illustration {
-    margin-left: auto;
-    margin-right: 0;
-  }
+  // .illustration_container.reverse .illustration {
+  //   margin-left: auto;
+  //   margin-right: 0;
+  // }
 
   .illustration {
     width: 100%;
@@ -53,13 +57,3 @@
   }
 }
 
-@media only screen and (min-width: 1201px) {
-  .block .feature {
-    margin-left: 20%;
-  }
-
-  .block.reverse .feature {
-    margin-left: 0;
-    margin-right: 20%;
-  }
-}

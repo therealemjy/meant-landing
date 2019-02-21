@@ -8,7 +8,7 @@ import P from '../P';
 import style from './style';
 
 const IllustrationSection = ({ illustration, features, className, reverse = false }) => (
-	<Section className={className}>
+	<Section className={classNames(style.container, className)}>
 		<Container>
 			<div class={classNames(style.block, { [style.reverse]: !!reverse })}>
 				{features.map(feature => (

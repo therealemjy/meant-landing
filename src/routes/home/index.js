@@ -1,3 +1,4 @@
+import Page from '../../components/Page';
 import Section from '../../components/Section';
 import Hero from '../../components/Hero';
 import Container from '../../components/Container';
@@ -11,7 +12,7 @@ const codeReviewVideo = require(`../../assets/images/pull-request-review-video.s
 const fasterOnboarding = require(`../../assets/images/faster-onboarding.svg`);
 
 const Home = () => (
-	<div>
+	<Page>
 		<Hero />
 
 		<IllustrationSection
@@ -62,7 +63,7 @@ const Home = () => (
 				</svg>
 			</div>
 		</Section>
-	</div>
+	</Page>
 );
 
 export default Home;

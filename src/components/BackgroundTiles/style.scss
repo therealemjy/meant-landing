@@ -1,18 +1,80 @@
 .container {
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
+	display: none;
 }
 
-.tile {
-	position: absolute;
-	left: 50%;
-}
+@media only screen and (min-width: 841px) {
+	.container {
+		display: block;
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
 
-.tile1 {
-	top: 300px;
-	left: -100px;
+	.tile {
+		position: absolute;
+		left: 50%;
+	}
+
+	.tile1 {
+		top: 300px;
+		margin-left: -50px;
+	}
+
+	.tile2 {
+		top: 120px;
+		margin-left: -350px;
+	}
+
+	.tile3 {
+		top: 500px;
+		margin-left: 250px;
+	}
+
+	.tile4 {
+		top: 0px;
+		margin-left: 350px;
+	}
+
+	.tile5 {
+		top: 550px;
+		margin-left: -220px;
+	}
+
+	.tile6 {
+		top: 650px;
+		margin-left: 60px;
+	}
+
+	.tile6 {
+		top: 800px;
+		margin-left: -560px;
+	}
+
+	.tile7 {
+		top: 820px;
+		margin-left: 0;
+	}
+
+	.tile8 {
+		top: 950px;
+		margin-left: 400px;
+	}
+
+	.tile9 {
+		top: 1150px;
+		margin-left: -20px;
+	}
+
+	.tile10 {
+		top: 1360px;
+		margin-left: -360px;
+	}
+
+	.tile11 {
+		top: 1480px;
+		margin-left: 500px;
+	}
 }
