@@ -11,33 +11,25 @@ import PrivacyPolicy from '../routes/privacy-policy';
 import TermsOfUse from '../routes/terms-of-use';
 
 import 'normalize.css';
-import style from './style';
 
 export default class App extends Component {
 	handleRoute = event => (this.currentUrl = event.url);
 
-	handleGoogleSignIn = async () => {
+	handleGoogleSignIn = async () => {};
 
-	};
-
-	componentDidMount() {
-
-	}
+	componentDidMount() {}
 
 	render() {
-
 		return (
 			<FirebaseContext.Provider value={new Firebase()}>
 				<div id="app">
 					<Header />
 
-					<div class={style.container}>
-						<Router onChange={this.handleRoute}>
-							<Home path="/" />
-							<PrivacyPolicy path="/privacy-policy" />
-							<TermsOfUse path="/terms-of-use" />
-						</Router>
-					</div>
+					<Router onChange={this.handleRoute}>
+						<Home path="/" />
+						<PrivacyPolicy path="/privacy-policy" />
+						<TermsOfUse path="/terms-of-use" />
+					</Router>
 
 					<Footer />
 				</div>
