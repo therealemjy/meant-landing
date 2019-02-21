@@ -1,10 +1,5 @@
 @import '../../css/_variables';
 
-.features_title {
-	text-align: center;
-	margin: 0 auto;
-}
-
 .register_section,
 .register_section_title {
   position: relative;
@@ -47,5 +42,13 @@
 @media only screen and (min-width: 841px) {
 	.register_section_form {
 		padding-bottom: 125px;
+	}
+
+	.code_reviews_illustration img {
+		width: 350px;
+	}
+
+	.onboarding_illustration img {
+		width: 430px;
 	}
 }
