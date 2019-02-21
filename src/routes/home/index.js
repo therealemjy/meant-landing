@@ -15,7 +15,7 @@ const Home = () => (
 		<Hero />
 
 		<IllustrationSection
-			className={style.meetings_page_section}
+			className={style.code_reviews_illustration}
 			illustration={codeReviewVideo}
 			features={[
 				{
@@ -28,6 +28,7 @@ const Home = () => (
 		/>
 
 		<IllustrationSection
+			className={style.onboarding_illustration}
 			illustration={fasterOnboarding}
 			features={[
 				{

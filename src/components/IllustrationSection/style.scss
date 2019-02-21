@@ -6,7 +6,7 @@
 
 .illustration {
   display: block;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -20,11 +20,24 @@
     flex: 1;
     padding-left: 30px;
   }
-
+  
   .illustration_container.reverse {
     order: 1;
     padding-left: 0;
     padding-right: 30px;
+  }
+  
+  .illustration_container .illustration {
+    margin-left: 0;
+  }
+
+  .illustration_container.reverse .illustration {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .illustration {
+    width: 100%;
   }
 
   .block {

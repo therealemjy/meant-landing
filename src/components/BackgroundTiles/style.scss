@@ -1,0 +1,18 @@
+.container {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.tile {
+	position: absolute;
+	left: 50%;
+}
+
+.tile1 {
+	top: 300px;
+	left: -100px;
+}
