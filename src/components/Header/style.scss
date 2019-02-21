@@ -1,11 +1,6 @@
 @import '../../css/_variables';
 
 .header {
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   height: 60px;

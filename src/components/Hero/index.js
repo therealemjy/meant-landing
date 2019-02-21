@@ -1,4 +1,3 @@
-import  { FirebaseContext } from '../Firebase';
 import Container from '../Container';
 import RegisterForm from '../RegisterForm';
 import H from '../H';
