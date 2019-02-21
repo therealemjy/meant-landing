@@ -35,25 +35,21 @@ class Firebase {
 			});
 		}
 		catch (error) {
-			let errorCode = error.code;
-			let errorMessage = error.message;
-			// The email of the user's account used.
-			let email = error.email;
-			// The firebase.auth.AuthCredential type that was used.
-			let credential = error.credential;
-
-			console.log('signInWithPopup error ', errorCode, errorMessage, email, credential);
+			// let errorCode = error.code;
+			// let errorMessage = error.message;
+			// // The email of the user's account used.
+			// let email = error.email;
+			// // The firebase.auth.AuthCredential type that was used.
+			// let credential = error.credential;
 		}
 	}
 
 	onSuccessGitHubLogin = async args => {
 		const result = await this.saveGithubUsers(args);
 
-		
-		console.log('data saved on backend ?', result);
+		// check here if error or something
+		return result;
 	};
-
-  doSignOut = () => this.auth.signOut();
 }
 
 export default Firebase;

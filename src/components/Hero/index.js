@@ -20,9 +20,7 @@ const Hero = () => (
 					Easily record and attach explanatory videos to your pull requests. Quickly give an overview of what your code does without getting bogged down in details.
 				</P>
 
-				<FirebaseContext.Consumer>
-					{firebase => <RegisterForm className={style.register_form} firebase={firebase} />}
-				</FirebaseContext.Consumer>
+				<RegisterForm className={style.register_form} />
 			</section>
 
 			<section class={style.illustration_container}>

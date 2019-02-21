@@ -45,9 +45,7 @@ const Home = () => (
 				<H className={style.register_section_title}>Request access now.</H>
 
 				<Container>
-					<FirebaseContext.Consumer>
-						{firebase => <RegisterForm className={style.register_form} firebase={firebase} />}
-					</FirebaseContext.Consumer>
+					<RegisterForm className={style.register_form} />
 				</Container>
 			</Section>
 		</div>

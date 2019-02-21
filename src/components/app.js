@@ -16,14 +16,6 @@ import style from './style';
 export default class App extends Component {
 	handleRoute = event => (this.currentUrl = event.url);
 
-	handleGoogleSignIn = async () => {
-
-	};
-
-	componentDidMount() {
-
-	}
-
 	render() {
 
 		return (

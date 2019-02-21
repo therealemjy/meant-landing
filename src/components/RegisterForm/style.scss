@@ -46,3 +46,21 @@
 .button_github_text {
   line-height: 25px;
 }
+
+.alert_block {
+  background-color: $darkGrey;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.alert_block_title {
+  display: block;
+  color: $darkSeafoamGreen;
+  margin-bottom: 16px;
+  font-weight: 700; 
+}
+
+.alert_block_message {
+  color: $coolGrey;
+  margin: 0;
+}
