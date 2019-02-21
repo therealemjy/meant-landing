@@ -2,6 +2,7 @@ import { Component } from 'preact';
 import classNames from 'classnames';
 import withFirebase from '../../hoc/withFirebase';
 import Button from '../Button';
+import P from '../P';
 
 import style from './style';
 
@@ -44,7 +45,7 @@ class RegisterForm extends Component {
 						authUser ? (
 							<div className={style.alert_block}>
 								<span className={style.alert_block_title}>Thanks for registering { authUser.displayName }!</span>
-								<p className={style.alert_block_message}>We are onboarding dozen of new teams everyday and we can’t wait to have you onboard. One of our team member will shortly contact you by email. 🎉</p>
+								<P className={style.alert_block_message}>We are onboarding dozen of new teams everyday and we can’t wait to have you onboard. One of our team member will shortly contact you by email. 🎉</P>
 							</div>
 						) : (
 							<Button

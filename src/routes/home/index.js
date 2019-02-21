@@ -7,9 +7,8 @@ import IllustrationSection from '../../components/IllustrationSection';
 
 import style from './style';
 
-const imagesAfterfix = typeof window !== 'undefined' && window.devicePixelRatio > 1 ? '-retina' : '';
-const meetingsPage = require(`../../assets/images/meetings-page${imagesAfterfix}.png`);
-const roomsPage = require(`../../assets/images/rooms-page${imagesAfterfix}.png`);
+const codeReviewVideo = require(`../../assets/images/pull-request-review-video.svg`);
+const fasterOnboarding = require(`../../assets/images/faster-onboarding.svg`);
 
 const Home = () => (
 	<div>
@@ -17,7 +16,7 @@ const Home = () => (
 
 		<IllustrationSection
 			className={style.meetings_page_section}
-			illustration={meetingsPage}
+			illustration={codeReviewVideo}
 			features={[
 				{
 					title: 'Better code reviews',
@@ -28,7 +27,7 @@ const Home = () => (
 		/>
 
 		<IllustrationSection
-			illustration={roomsPage}
+			illustration={fasterOnboarding}
 			features={[
 				{
 					title: 'Faster onboarding',
