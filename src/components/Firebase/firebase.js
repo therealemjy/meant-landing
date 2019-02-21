@@ -20,6 +20,14 @@ class Firebase {
 	}
 
 	doSignInWithGithub =  async () => {
+		// log in GA
+		window.ga('send', {
+			hitType: 'event',
+			eventCategory: 'Subscription',
+			eventAction: 'landing-cta',
+			eventLabel: 'Initiate'
+		});
+
 		try {
 			this.gitHubProvider.addScope('user');
 
@@ -41,11 +49,28 @@ class Firebase {
 			// let email = error.email;
 			// // The firebase.auth.AuthCredential type that was used.
 			// let credential = error.credential;
+			// log in GA
+			window.ga('send', {
+				hitType: 'event',
+				eventCategory: 'Subscription',
+				eventAction: 'landing-cta',
+				eventLabel: 'Error github'
+			});
 		}
 	}
 
 	onSuccessGitHubLogin = async args => {
 		const result = await this.saveGithubUsers(args);
+
+		// log success in GA
+		window.ga('send', {
+			hitType: 'event',
+			eventCategory: 'Subscription',
+			eventAction: 'landing-cta',
+			eventLabel: 'Success'
+		});
+
+		// TODO: add facebook pixel here
 
 		// check here if error or something
 		return result;

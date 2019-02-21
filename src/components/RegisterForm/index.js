@@ -37,8 +37,6 @@ class RegisterForm extends Component {
 		const { className } = this.props;
 		const { authUser } = this.state;
 
-		console.log('authUser : ', authUser);
-
 		return (
 			<div className={classNames(style.container, className)}>
 				<div className={style.row}>
