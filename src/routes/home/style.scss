@@ -23,12 +23,29 @@
 .register_section_form {
   margin-left: auto;
 	margin-right: auto;
-	z-index: 1;
+	padding-bottom: 65px;
+}
+
+.background,
+.wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.background {
+  top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.wave {
+  bottom: 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 841px) {
-	.register_section {
-		padding-top: 130px;
-		padding-bottom: 145px;
+	.register_section_form {
+		padding-bottom: 125px;
 	}
 }

@@ -1,6 +1,6 @@
 @import '../../css/_variables';
 
-.illustration_container {
+.block {
   margin-bottom: 45px;
 }
 
@@ -18,36 +18,35 @@
 @media only screen and (min-width: 841px) {
   .illustration_container {
     flex: 1;
-    padding-right: 30px;
-    margin-bottom: 0;
+    padding-left: 30px;
   }
 
   .illustration_container.reverse {
-    order: 2;
-    padding-right: 0;
-    padding-left: 30px;
+    order: 1;
+    padding-left: 0;
+    padding-right: 30px;
   }
 
   .block {
     flex: 1;
-    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
   }
 
   .block.reverse {
-    order: 1;
-    padding-right: 30px;
-    padding-left: 0;
-    margin-right: 0;
+    order: 2;
+    padding-left: 30px;
+    padding-right: 0;
   }
 }
 
 @media only screen and (min-width: 1201px) {
   .block .feature {
-    margin-right: 20%;
+    margin-left: 20%;
   }
 
   .block.reverse .feature {
-    margin-right: 0;
-    margin-left: 20%;
+    margin-left: 0;
+    margin-right: 20%;
   }
 }
