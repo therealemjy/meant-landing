@@ -16,9 +16,26 @@ import 'normalize.css';
 export default class App extends Component {
 	handleRoute = event => (this.currentUrl = event.url);
 
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			firebase: null
+		};
+	}
+
+	componentDidMount() {
+		if (typeof window !== 'undefined') {
+			return this.setState({
+				firebase: new Firebase()
+			});
+		}
+	}
+
 	render() {
+		const { firebase } = this.state;
 		return (
-			<FirebaseContext.Provider value={new Firebase()}>
+			<FirebaseContext.Provider value={firebase}>
 				<div id="app">
 					<Header />
 
