@@ -1,5 +1,6 @@
 import { Component } from 'preact';
 import { Router } from 'preact-router';
+import Match from 'preact-router/match';
 
 import Header from './Header';
 import Footer from './Footer';
@@ -40,9 +41,12 @@ export default class App extends Component {
 					<Header />
 
 					<Router onChange={this.handleRoute}>
-						<Home path="/" />
+						<Home default />
 						<PrivacyPolicy path="/privacy-policy" />
 						<TermsOfUse path="/terms-of-use" />
+						<Match path="/:url_code">
+							{ (props) => <Home {...props} /> }
+						</Match>
 					</Router>
 
 					<Footer />

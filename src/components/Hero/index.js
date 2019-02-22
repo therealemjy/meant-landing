@@ -7,12 +7,12 @@ import style from './style';
 
 const illustration = require('../../assets/images/integration-record-video.svg');
 
-const Hero = () => (
+const Hero = ({ companyName, companyLogo }) => (
 	<div class={style.hero}>
 		<Container>
 			<section class={style.block}>
 				<H className={style.title} type="h1">
-					The new programming best practice
+					The next programming best practice { companyName && `at ${companyName}` }
 				</H>
 
 				<P className={style.paragraph}>
@@ -28,6 +28,16 @@ const Hero = () => (
 					src={illustration}
 					alt="Meant is your central place for meeting and meeting rooms management"
 				/>
+				{
+					companyLogo && (
+						<img
+							class={style.illustration_logo}
+							src={companyLogo}
+							alt={`${companyName}'s logo`}
+						/>
+					)
+				}
+
 			</section>
 		</Container>
 	</div>
