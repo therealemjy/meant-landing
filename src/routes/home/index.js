@@ -22,7 +22,7 @@ const Home = () => (
 				{
 					title: 'Better code reviews',
 					text:
-						'Other developers of the team can watch the videos related to a pull request and quickly understand a piece of code.'
+						'Developers of the team can watch the videos related to a pull request to get the context of a piece of code and quickly understand why and how it was built.'
 				}
 			]}
 			reverse
