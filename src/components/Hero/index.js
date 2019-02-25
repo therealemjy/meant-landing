@@ -26,7 +26,7 @@ const Hero = ({ companyName, companyLogo }) => (
 				<img
 					class={style.illustration}
 					src={illustration}
-					alt="Meant is your central place for meeting and meeting rooms management"
+					alt="Easily record and attach explanatory videos to your GitHub repository"
 				/>
 				{
 					companyLogo && (
