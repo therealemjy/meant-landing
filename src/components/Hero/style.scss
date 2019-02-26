@@ -19,6 +19,10 @@
   max-width: 100%;
 }
 
+.illustration_container {
+  position: relative;
+}
+
 .illustration_logo {
   position: absolute;
   top: 16px;
@@ -56,7 +60,6 @@
   .illustration_container {
     flex: 1;
     padding-left: 30px;
-    position: relative;
   }
 
   .illustration {
