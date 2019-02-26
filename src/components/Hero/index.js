@@ -12,11 +12,12 @@ const Hero = ({ companyName, companyLogo }) => (
 		<Container>
 			<section class={style.block}>
 				<H className={style.title} type="h1">
-					The next programming best practice { companyName && `at ${companyName}` }
+					The next programming best practice {companyName && `at ${companyName}`}
 				</H>
 
 				<P className={style.paragraph}>
-					Easily record and attach explanatory videos to your pull requests. Quickly give an overview of what your code does without getting bogged down in details.
+					Easily record and attach explanatory videos to your pull requests. Quickly give an overview of what
+					your code does without getting bogged down in details.
 				</P>
 
 				<RegisterForm className={style.register_form} />
@@ -28,16 +29,8 @@ const Hero = ({ companyName, companyLogo }) => (
 					src={illustration}
 					alt="Easily record and attach explanatory videos to your GitHub repository"
 				/>
-				{
-					companyLogo && (
-						<img
-							class={style.illustration_logo}
-							src={companyLogo}
-							alt={`${companyName}'s logo`}
-						/>
-					)
-				}
 
+				{companyLogo && <img class={style.illustration_logo} src={companyLogo} alt={`${companyName}'s logo`} />}
 			</section>
 		</Container>
 	</div>
