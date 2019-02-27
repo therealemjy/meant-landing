@@ -16,7 +16,7 @@ const Hero = ({ companyName, companyLogo }) => (
 				</H>
 
 				<P className={style.paragraph}>
-					Easily record and attach explanatory videos to your pull requests. Quickly give an overview of what
+					Easily record and attach explanatory videos to your GitHub repository. Quickly give an overview of what
 					your code does without getting bogged down in details.
 				</P>
 

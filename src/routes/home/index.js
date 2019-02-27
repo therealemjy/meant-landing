@@ -58,7 +58,7 @@ class Home extends Component {
 						{
 							title: 'Better code reviews',
 							text:
-									'Developers of the team can watch the videos related to a pull request to get the context of a piece of code and quickly understand why and how it was built.'
+									'Developers of the team can watch the videos related to a repository to get the context of a piece of code and quickly understand why and how it was built.'
 						}
 					]}
 					reverse
